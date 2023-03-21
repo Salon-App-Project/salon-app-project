@@ -1,9 +1,15 @@
-# salon-app-project
 Product Spec Design: Salon App
 ===
+# Overview
 ## Description
 Salon App is a web-based application for salon businesses. It provides a comprehensive suite of tools for salon owners, enabling them to manage their business more efficiently and effectively.
-
+## App Evaluation
+- **Category**: Business / Customer Service
+- **Mobile**: Will focus on a mobile platform for now.
+- **Story**: Allows greater online integration supporting easy and robust communication between salon businesses and their clients.
+- **Market**: Salon customers who want an easy time finding great relevant salons and scheduling for them. Salon businesses that want to spend more time on cosmetics and less time on management.
+- **Habit**: As much as users need to related to salon services/business.
+- **Scope**: Connecting users to salons and booking appointments will be the main objective. Broadening later into better support of salon business management and further integration between users and their favorite salons.
 ## Features
 Salon App provides the following features:
 - Client Management: Easily manage client information, bookings, and appointments.
@@ -17,6 +23,7 @@ Salon App is built using modern web technologies in IOS development in Swift and
 Salon App provides comprehensive customer support, including online help guides and a dedicated customer service team.
 ## Pricing
 Salon App offers a free 14-day trial, after which users can select a subscription plan to suit their needs. Plans start from $9.99 per month for salon owners. It is free for customers/users but they will see some ads.
+# Product Spec
 ## User Stories (Required and Optional)
 ### **Required** Must-have Stories
 •	User can create a new account
