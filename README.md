@@ -18,8 +18,8 @@ Salon App provides comprehensive customer support, including online help guides 
 ## Pricing
 Salon App offers a free 14-day trial, after which users can select a subscription plan to suit their needs. Plans start from $9.99 per month for salon owners. It is free for customers/users but they will see some ads.
 # Product Spec
-## User Stories (Required and Optional)
-### **Required** Must-have Stories
+## 1. User Stories (Required and Optional)
+ **Required** Must-have Stories
 User can create a new account
 •	User can login
 •	User can search for salons based on their zip code 
@@ -44,7 +44,7 @@ User can create a new account
 •	User can see a list of their followers
 •	User can see a list of their following
 •	User can view other user’s profiles and see their photo feed
-2. Screen Archetypes
+## 2. Screen Archetypes
 •	Login Screen
 •	Registration Screen
 •	Search Screen
@@ -55,14 +55,14 @@ User can create a new account
 •	Business Setup Screen
 •	Revenue Tracking Screen
 •	Expense Tracking Screen
-3. Navigation
-Tab Navigation (Tab to Screen)
+## 3. Navigation
+**Tab Navigation (Tab to Screen)
 •	Home Screen
 •	Search Screen
 •	Business Setup Screen
 •	Revenue Tracking Screen
 •	Expense Tracking Screen
-Flow Navigation (Screen to Screen)
+**Flow Navigation (Screen to Screen)
 •	Login Screen
 => Home
 •	Registration Screen
@@ -124,3 +124,4 @@ amount: decimal(10,2)
 expense_date: date
 created_at: datetime
 
+## Networking
