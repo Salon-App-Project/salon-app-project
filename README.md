@@ -29,7 +29,8 @@ User can create a new account
 •	Business owners can set up their business information (Company Name, Address, Tax ID, Phone Number) and services offered
 •	Business owners can track service revenue based on bookings, including tip
 •	Business owners can track expenses by date, invoice number, description, and price
-Optional Nice-to-have Stories
+
+**Optional Nice-to-have Stories
 •	User can receive an email confirmation upon booking
 •	User can provide their gender, phone number, and email address
 •	User can view the list of salons in either list mode or map mode
