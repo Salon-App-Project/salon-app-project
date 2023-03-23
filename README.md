@@ -41,7 +41,7 @@ Salon App offers a free 14-day trial, after which users can select a subscriptio
 - [ ] User can provide their gender, phone number, and email address
 - [ ] User can view the list of salons in either list mode or map mode
 - [ ] User can like a photo
-- [x] User can add a comment to a photo
+- [ ] User can add a comment to a photo
 - [ ] User can tap a photo to view a more detailed photo screen with comments
 - [ ] User can see trending photos
 - [ ] User can search for photos by a hashtag
