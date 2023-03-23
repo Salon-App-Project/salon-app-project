@@ -20,7 +20,7 @@ Salon App offers a free 14-day trial, after which users can select a subscriptio
 # Product Spec
 ## 1. User Stories (Required and Optional)
  **Required** Must-have Stories
-User can create a new account
+User can create a new accounta
 •	User can login
 •	User can search for salons based on their zip code 
 •	User can view the name, picture, and services offered by a salon
