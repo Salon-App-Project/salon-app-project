@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BA0A65129D52253005BE6EB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0A65029D52253005BE6EB /* Service.swift */; };
+		1BA0A65429D52791005BE6EB /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1BA0A65329D52791005BE6EB /* ParseSwift */; };
 		ACA32A5829CBC59E00370D95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA32A5729CBC59E00370D95 /* AppDelegate.swift */; };
 		ACA32A5A29CBC59E00370D95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA32A5929CBC59E00370D95 /* SceneDelegate.swift */; };
 		ACA32A5C29CBC59E00370D95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA32A5B29CBC59E00370D95 /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BA0A65029D52253005BE6EB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		ACA32A5429CBC59E00370D95 /* SalonAppProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonAppProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA32A5729CBC59E00370D95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA32A5929CBC59E00370D95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA0A65429D52791005BE6EB /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +64,7 @@
 				ACA32A5929CBC59E00370D95 /* SceneDelegate.swift */,
 				ACA32A5B29CBC59E00370D95 /* ViewController.swift */,
 				ACA32A5D29CBC59E00370D95 /* Main.storyboard */,
+				1BA0A65029D52253005BE6EB /* Service.swift */,
 				ACA32A6029CBC5A100370D95 /* Assets.xcassets */,
 				ACA32A6229CBC5A100370D95 /* LaunchScreen.storyboard */,
 				ACA32A6529CBC5A100370D95 /* Info.plist */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = SalonAppProject;
+			packageProductDependencies = (
+				1BA0A65329D52791005BE6EB /* ParseSwift */,
+			);
 			productName = SalonAppProject;
 			productReference = ACA32A5429CBC59E00370D95 /* SalonAppProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = ACA32A4B29CBC59E00370D95;
+			packageReferences = (
+				1BA0A65229D52791005BE6EB /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+			);
 			productRefGroup = ACA32A5529CBC59E00370D95 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA32A5C29CBC59E00370D95 /* ViewController.swift in Sources */,
+				1BA0A65129D52253005BE6EB /* Service.swift in Sources */,
 				ACA32A5829CBC59E00370D95 /* AppDelegate.swift in Sources */,
 				ACA32A5A29CBC59E00370D95 /* SceneDelegate.swift in Sources */,
 			);
@@ -356,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1BA0A65229D52791005BE6EB /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1BA0A65329D52791005BE6EB /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BA0A65229D52791005BE6EB /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACA32A4C29CBC59E00370D95 /* Project object */;
 }
