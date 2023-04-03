@@ -7,6 +7,21 @@
 
 import Foundation
 import ParseSwift
+enum status {
+    case booked
+    case cancelled
+    case completed
+}
+enum gender {
+    case male
+    case female
+    case other
+}
+enum cancelled_by {
+    case customer
+    case business
+    case null
+}
 
 struct Service: ParseObject {
     var originalData: Data?
@@ -14,7 +29,6 @@ struct Service: ParseObject {
     var createdAt: Date?
     var updatedAt: Date?
     var ACL: ParseSwift.ParseACL?
-    var id: Int?
     var name: String?
     var price: Decimal?
     var duration: Int?
@@ -28,18 +42,9 @@ struct Service: ParseObject {
     
     var date_time: Date?
     
-    enum status {
-        case booked
-        case cancelled
-        case completed
-    }
-    enum gender {
-        case male
-        case female
-        case other
-    }
-    enum cancelled_by {
-        case customer
-        case business
-        case null
-    }
+    var status : String?
+    
+    var gender: String?
+    
+    var cancelled_by: String?
+}
