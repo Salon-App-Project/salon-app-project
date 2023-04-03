@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1BA0A65129D52253005BE6EB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0A65029D52253005BE6EB /* Service.swift */; };
 		1BA0A65429D52791005BE6EB /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1BA0A65329D52791005BE6EB /* ParseSwift */; };
+		1BEB0E0029DAA9040016A7FB /* UserSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB0DFF29DAA9040016A7FB /* UserSignupViewController.swift */; };
+		1BEB0E0229DAA90C0016A7FB /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB0E0129DAA90C0016A7FB /* AppUser.swift */; };
 		ACA32A5829CBC59E00370D95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA32A5729CBC59E00370D95 /* AppDelegate.swift */; };
 		ACA32A5A29CBC59E00370D95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA32A5929CBC59E00370D95 /* SceneDelegate.swift */; };
 		ACA32A5C29CBC59E00370D95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA32A5B29CBC59E00370D95 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		1BA0A65029D52253005BE6EB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		1BEB0DFF29DAA9040016A7FB /* UserSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSignupViewController.swift; sourceTree = "<group>"; };
+		1BEB0E0129DAA90C0016A7FB /* AppUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		ACA32A5429CBC59E00370D95 /* SalonAppProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonAppProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA32A5729CBC59E00370D95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA32A5929CBC59E00370D95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 		ACA32A5629CBC59E00370D95 /* SalonAppProject */ = {
 			isa = PBXGroup;
 			children = (
+				1BEB0E0129DAA90C0016A7FB /* AppUser.swift */,
+				1BEB0DFF29DAA9040016A7FB /* UserSignupViewController.swift */,
 				ACA32A5729CBC59E00370D95 /* AppDelegate.swift */,
 				ACA32A5929CBC59E00370D95 /* SceneDelegate.swift */,
 				ACA32A5B29CBC59E00370D95 /* ViewController.swift */,
@@ -150,8 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA32A5C29CBC59E00370D95 /* ViewController.swift in Sources */,
+				1BEB0E0029DAA9040016A7FB /* UserSignupViewController.swift in Sources */,
 				1BA0A65129D52253005BE6EB /* Service.swift in Sources */,
 				ACA32A5829CBC59E00370D95 /* AppDelegate.swift in Sources */,
+				1BEB0E0229DAA90C0016A7FB /* AppUser.swift in Sources */,
 				ACA32A5A29CBC59E00370D95 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

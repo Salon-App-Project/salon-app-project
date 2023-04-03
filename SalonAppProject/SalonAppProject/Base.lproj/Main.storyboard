@@ -132,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="739.69465648854964" y="716.90140845070425"/>
         </scene>
-        <!--View Controller-->
+        <!--User Signup View Controller-->
         <scene sceneID="vBr-Yz-Mpe">
             <objects>
-                <viewController storyboardIdentifier="signupasCustomer" id="LHJ-xS-4Ev" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signupasCustomer" id="LHJ-xS-4Ev" customClass="UserSignupViewController" customModule="SalonAppProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kk3-4M-pJ0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,12 +169,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Signup"/>
+                                <connections>
+                                    <action selector="Signup_press:" destination="LHJ-xS-4Ev" eventType="touchUpInside" id="5dw-sV-MpS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YvZ-Nt-jIJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="OyG-RW-ae1"/>
+                    <connections>
+                        <outlet property="Emailtext" destination="mVu-Zq-4hh" id="EQv-QE-FUE"/>
+                        <outlet property="Nametext" destination="1VM-Qo-RG4" id="D5J-wU-S2A"/>
+                        <outlet property="Passwordtext" destination="jLQ-zp-ky4" id="mc7-49-aRn"/>
+                        <outlet property="Phonetext" destination="eIw-6I-M5z" id="dTd-ng-xU7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqe-R6-b4Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
