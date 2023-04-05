@@ -27,8 +27,8 @@ Salon App offers a free 14-day trial, after which users can select a subscriptio
 # Product Spec
 ## User Stories
 ### Required Must-have Stories
-- [x ] User can create a new account
-- [ x] User can login
+- [x] User can create a new account
+- [x] User can login
 - [ ] User can search for salons based on their zip code 
 - [ ] User can view the name, picture, and services offered by a salon
 - [ ] User can select a service, gender, and date/time for their appointment
@@ -68,8 +68,8 @@ Salon App offers a free 14-day trial, after which users can select a subscriptio
 - [ ] Revenue Tracking Screen
 - [ ] Expense Tracking Screen
 ## Flow Navigation (Screen to Screen)
-- [x ] Login Screen => Home
-- [ x] Registration Screen => Home
+- [x] Login Screen => Home
+- [x] Registration Screen => Home
 - [ ] Search Screen => Salon List Screen
 - [ ] Salon List Screen => Salon Details Screen
 - [ ] Salon Details Screen => Appointment Selection Screen
