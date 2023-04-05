@@ -51,8 +51,8 @@ Salon App offers a free 14-day trial, after which users can select a subscriptio
 - [ ] User can see a list of their following
 - [ ] User can view other user’s profiles and see their photo feed
 ## Screen Archetypes
-- [ ] Login Screen
-- [ ] Registration Screen
+- [x] Login Screen
+- [x] Registration Screen
 - [ ] Search Screen
 - [ ] Salon List Screen
 - [ ] Salon Details Screen
