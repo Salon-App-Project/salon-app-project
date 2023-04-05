@@ -9,6 +9,7 @@ import UIKit
 import ParseSwift
 class UserSignupViewController: UIViewController {
 
+    @IBOutlet weak var Taxtext: UITextField!
     @IBOutlet weak var Passwordtext: UITextField!
     @IBOutlet weak var Phonetext: UITextField!
     @IBOutlet weak var Emailtext: UITextField!
@@ -35,6 +36,42 @@ class UserSignupViewController: UIViewController {
         newUser.username = name
         newUser.email = email
         newUser.password = password
+
+        newUser.signup { [weak self] result in
+
+            switch result {
+            case .success(let user):
+
+                print("✅ Successfully signed up user \(user)")
+
+                // Post a notification that the user has successfully signed up.
+                NotificationCenter.default.post(name: Notification.Name("login"), object: nil)
+
+            case .failure(let error):
+                // Failed sign up
+                self?.showAlert(description: error.localizedDescription)
+     }
+        }
+
+    }
+    @IBAction func Biz_Signup_press(_ sender: Any) {
+        guard let name = Nametext.text,
+                let phone = Phonetext.text,
+                let email = Emailtext.text,
+                let password = Passwordtext.text,
+                let taxId = Taxtext.text,
+                !name.isEmpty,
+                !phone.isEmpty,
+                !email.isEmpty,
+                !password.isEmpty,
+                !taxId.isEmpty else {
+            showMissingFieldsAlert()
+            return
+        }
+        var newUser = AppUser()
+        newUser.username = name
+        newUser.email = email
+        newUser.taxid = taxId
 
         newUser.signup { [weak self] result in
 
