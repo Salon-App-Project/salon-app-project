@@ -1,161 +1,63 @@
-Product Spec Design: Salon App
-Product Design: Salon App
-===
-# Overview
-## Description
-Salon App is a web-based application for salon businesses. It provides a comprehensive suite of tools for salon owners, enabling them to manage their business more efficiently and effectively.
-## App Evaluation
-- **Category**: Business / Customer Service
-- **Mobile**: Will focus on a mobile platform for now.
-- **Story**: Allows greater online integration supporting easy and robust communication between salon businesses and their clients.
-- **Market**: Salon customers who want an easy time finding great relevant salons and scheduling for them. Salon businesses that want to spend more time on cosmetics and less time on management.
-- **Habit**: As much as users need to related to salon services/business.
-- **Scope**: Connecting users to salons and booking appointments will be the main objective. Broadening later into better support of salon business management and further integration between users and their favorite salons.
-## Features
-Salon App provides the following features:
-- Client Management: Easily manage client information, bookings, and appointments.
-- Inventory Management: Track and manage inventory, including stock levels and pricing.
-- Employee Management: Manage employee information, timesheets, and payroll.
-- Point of Sale: Process payments and issue receipts quickly and securely.
-- Reporting: Generate detailed reports to gain insights into your business performance.
-## Technology
-Salon App is built using modern web technologies in IOS development in Swift and Xcode. It is designed to be fast, secure, and reliable.
-## Support
-Salon App provides comprehensive customer support, including online help guides and a dedicated customer service team.
-## Pricing
-Salon App offers a free 14-day trial, after which users can select a subscription plan to suit their needs. Plans start from $9.99 per month for salon owners. It is free for customers/users but they will see some ads.
-# Product Spec
-## User Stories
-### Required Must-have Stories
-- [ ] User can create a new account
-- [ ] User can login
-- [ ] User can search for salons based on their zip code 
-- [ ] User can view the name, picture, and services offered by a salon
-- [ ] User can select a service, gender, and date/time for their appointment
-- [ ] 	User can cancel their booking and the business owner will be notified automatically
-- [ ] Business owners can set up their business information (Company Name, Address, Tax ID, Phone Number) and services offered
-- [ ] Business owners can track service revenue based on bookings, including tip
-- [ ] Business owners can track expenses by date, invoice number, description, and price
-### Optional Nice-to-have Stories
-- [ ] User can receive an email confirmation upon booking
-- [ ] User can provide their gender, phone number, and email address
-- [ ] User can view the list of salons in either list mode or map mode
-- [ ] User can like a photo
-- [ ] User can add a comment to a photo
-- [ ] User can tap a photo to view a more detailed photo screen with comments
-- [ ] User can see trending photos
-- [ ] User can search for photos by a hashtag
-- [ ] User can see notifications when their photo is liked or they are followed
-- [ ] User can see their profile page with their photos
-- [ ] User can see a list of their followers
-- [ ] User can see a list of their following
-- [ ] User can view other user’s profiles and see their photo feed
-## Screen Archetypes
-- [ ] Login Screen
-- [ ] Registration Screen
-- [ ] Search Screen
-- [ ] Salon List Screen
-- [ ] Salon Details Screen
-- [ ] Appointment Selection Screen
-- [ ] Confirmation Screen
-- [ ] Business Setup Screen
-- [ ] Revenue Tracking Screen
-- [ ] Expense Tracking Screen
-## Navigation Tab Navigation (Tab to Screen)
-- [ ] Home Screen
-- [ ] Search Screen
-- [ ] Business Setup Screen
-- [ ] Revenue Tracking Screen
-- [ ] Expense Tracking Screen
-## Flow Navigation (Screen to Screen)
-- [ ] Login Screen => Home
-- [ ] Registration Screen => Home
-- [ ] Search Screen => Salon List Screen
-- [ ] Salon List Screen => Salon Details Screen
-- [ ] Salon Details Screen => Appointment Selection Screen
-- [ ] Appointment Selection Screen => Confirmation Screen
-- [ ] Confirmation Screen => Home
-## Wireframe
-<img src="https://puu.sh/JCifc/29474ccd5f.png" width=750>
+# Project 5 - *Be Real Clone Pt1*
 
-# Models
+Submitted by: **Ruth Bilaro**
 
-### User
+** Be Real Clone Pt1 is an app that users post a photo of what they’re currently doing upon receiving a random notification during the day. Only after posting a photo can the user see their friends’ photos. **
+Time spent: **60** hours spent in total
 
-id: int (primary key) 
+## Required Features
 
-name: varchar(255) 
+The following **required** functionality is completed:
 
-email: varchar(255)
+- [x ] User can register a new account
+- [x ] User can log in with newly created account
+- [x] App has a feed of posts when user logs in
+- [x] User can upload a new post which takes in a picture from photo library and a caption	
+ 
+The following **optional** features are implemented:
 
-phone_number: varchar(20)
-
-password: varchar(255)
-
-created_at: datetime
-</table>
-
-### Business
-
-id: int (primary key)
-
-name: varchar(255)
-
-address: varchar(255)
-
-tax_id: varchar(20)
-
-phone_number: varchar(20)
-
-subscription_status: boolean
-
-created_at: datetime
-
-### Service
-
-id: int (primary key)
-
-name: varchar(255)
-
-price: decimal(10,2)
-
-duration: int
-
-gender: enum('male', 'female')
-
-business_id: int (foreign key referencing Business)
+- [x ] Users can pull to refresh their feed and see a loading indicator
+- [x ] Users can infinite-scroll in their feed to see past the 10 most recent photos
+- [x ] Users can see location and time of photo upload in the feed	
+- [x] User is able to logout
+- [x ] User stays logged in when app is closed and open again	
 
 
-Appointment_id: int (primary key) 
+The following **additional** features are implemented:
+-	Custom fonts
+-	Remove text from back button
+-	Rounded corner
+-	Stackview padding
+-	Multiple bar button items
 
-customer_id: int (foreign key referencing User)
+- [ ] List anything else that you can get done to improve the app functionality!
 
-business_id: int (foreign key referencing Business)
+## Video Walkthrough
 
-service_id: int (foreign key referencing Service)
+Here's a walkthrough of implemented user stories:
 
-date_time: datetime
+![Video1_AdobeExpress](https://user-images.githubusercontent.com/123043996/226150757-f318368f-52c7-4f5f-8941-a51c210481fa.gif)
 
-status: enum('booked', 'cancelled', 'completed')
 
-cancelled_by: enum('customer', 'business', null)
 
-created_at: datetime
+GIF created with Adobe Express
+## Notes
 
-### Expense
+Describe any challenges encountered while building the app.	
+Location does not show.
 
-id: int (primary key)
+## License
 
-business_id: int (foreign key referencing Business)
+    Copyright [yyyy] [name of copyright owner]
 
-invoice_number: varchar(255)
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-description: text
+        http://www.apache.org/licenses/LICENSE-2.0
 
-amount: decimal(10,2)
-
-expense_date: date
-
-created_at: datetime
-## Schema 
-## Networking
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
