@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0C191D4B29DAA2AC00549997 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C191D4A29DAA2AC00549997 /* User.swift */; };
 		0CAF471C29DAF24C0093D108 /* SalonHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF471B29DAF24C0093D108 /* SalonHome.swift */; };
+		1B17973B29E7943900F48DE2 /* PastAppointments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17973A29E7943900F48DE2 /* PastAppointments.swift */; };
+		1B17973D29E7944B00F48DE2 /* PastAppTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17973C29E7944B00F48DE2 /* PastAppTable.swift */; };
+		1B17973F29E7946200F48DE2 /* PastAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17973E29E7946200F48DE2 /* PastAppCell.swift */; };
+		1B25935329DEAA9E003B00A9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B25935229DEAA9E003B00A9 /* Service.swift */; };
 		D81488CB24A2266E002168EB /* New-Hairstyles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D81488CA24A2266D002168EB /* New-Hairstyles.jpg */; };
 		D81488D324A23097002168EB /* Saloon.png in Resources */ = {isa = PBXBuildFile; fileRef = D81488D024A23097002168EB /* Saloon.png */; };
 		D81488DA24A23578002168EB /* subBg.png in Resources */ = {isa = PBXBuildFile; fileRef = D81488D924A23578002168EB /* subBg.png */; };
@@ -49,6 +53,10 @@
 /* Begin PBXFileReference section */
 		0C191D4A29DAA2AC00549997 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0CAF471B29DAF24C0093D108 /* SalonHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonHome.swift; sourceTree = "<group>"; };
+		1B17973A29E7943900F48DE2 /* PastAppointments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAppointments.swift; sourceTree = "<group>"; };
+		1B17973C29E7944B00F48DE2 /* PastAppTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAppTable.swift; sourceTree = "<group>"; };
+		1B17973E29E7946200F48DE2 /* PastAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAppCell.swift; sourceTree = "<group>"; };
+		1B25935229DEAA9E003B00A9 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		349812DBBEC10AB841F78426 /* Pods_Salon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Salon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4560316B20AFD9692F91CBD8 /* Pods-Salon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salon.debug.xcconfig"; path = "Target Support Files/Pods-Salon/Pods-Salon.debug.xcconfig"; sourceTree = "<group>"; };
 		C2F3539954825157C35A487F /* Pods-Salon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salon.release.xcconfig"; path = "Target Support Files/Pods-Salon/Pods-Salon.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				0C191D4A29DAA2AC00549997 /* User.swift */,
+				1B25935229DEAA9E003B00A9 /* Service.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -145,6 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				D8251AA924A0CB790072EAA3 /* Home.swift */,
+				1B17973A29E7943900F48DE2 /* PastAppointments.swift */,
+				1B17973C29E7944B00F48DE2 /* PastAppTable.swift */,
+				1B17973E29E7946200F48DE2 /* PastAppCell.swift */,
 			);
 			path = HomeUser;
 			sourceTree = "<group>";
@@ -438,14 +450,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B17973D29E7944B00F48DE2 /* PastAppTable.swift in Sources */,
+				1B17973F29E7946200F48DE2 /* PastAppCell.swift in Sources */,
 				D82E51D32484DDE900AD3D75 /* CommonClass.swift in Sources */,
 				D848723224810F0100709F5F /* AppDelegate.swift in Sources */,
 				D8AD266D249DFB9500F4072F /* HoshiTextField.swift in Sources */,
+				1B17973B29E7943900F48DE2 /* PastAppointments.swift in Sources */,
 				0CAF471C29DAF24C0093D108 /* SalonHome.swift in Sources */,
 				D82E51CB2484BF8C00AD3D75 /* Login.swift in Sources */,
 				0C191D4B29DAA2AC00549997 /* User.swift in Sources */,
 				D8251AAA24A0CB790072EAA3 /* Home.swift in Sources */,
 				D82E51C92484BF8100AD3D75 /* Register.swift in Sources */,
+				1B25935329DEAA9E003B00A9 /* Service.swift in Sources */,
 				D82AF9EF249CADDA00C4E265 /* KaedeTextField.swift in Sources */,
 				D82AF9EE249CADDA00C4E265 /* TextFieldEffects.swift in Sources */,
 			);
