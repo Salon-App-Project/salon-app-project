@@ -1,0 +1,36 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.11)
+  - KRActivityIndicatorView (3.0.7)
+  - KRProgressHUD (3.4.7):
+    - KRActivityIndicatorView (= 3.0.7)
+  - LGButton (1.1.6)
+  - ParseSwift (4.14.2)
+  - Toast-Swift (3.0.1)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - KRProgressHUD
+  - LGButton
+  - ParseSwift
+  - Toast-Swift (~> 3.0.1)
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - KRActivityIndicatorView
+    - KRProgressHUD
+    - LGButton
+    - ParseSwift
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  KRActivityIndicatorView: ad69e89c4ce40c986cf580595be4829dcad0e35a
+  KRProgressHUD: a248f0bc6c9c2aed40a37b76e03ffecc7f85c887
+  LGButton: 9f0a7f9d3030e3f504108342f6b66d64a429371b
+  ParseSwift: 5df70e3d5aed3351fb3188ddf0a2812b7983a379
+  Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
+
+PODFILE CHECKSUM: 28b19cf8464d7ef6334896cd050277f2d8d9d556
+
+COCOAPODS: 1.12.0
