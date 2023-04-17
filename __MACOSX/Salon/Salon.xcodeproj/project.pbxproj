@@ -13,6 +13,7 @@
 		1B17973D29E7944B00F48DE2 /* PastAppTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17973C29E7944B00F48DE2 /* PastAppTable.swift */; };
 		1B17973F29E7946200F48DE2 /* PastAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17973E29E7946200F48DE2 /* PastAppCell.swift */; };
 		1B25935329DEAA9E003B00A9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B25935229DEAA9E003B00A9 /* Service.swift */; };
+		AC7A266529ECFEF1003D14D1 /* EditingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7A266429ECFEF1003D14D1 /* EditingUser.swift */; };
 		D81488CB24A2266E002168EB /* New-Hairstyles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D81488CA24A2266D002168EB /* New-Hairstyles.jpg */; };
 		D81488D324A23097002168EB /* Saloon.png in Resources */ = {isa = PBXBuildFile; fileRef = D81488D024A23097002168EB /* Saloon.png */; };
 		D81488DA24A23578002168EB /* subBg.png in Resources */ = {isa = PBXBuildFile; fileRef = D81488D924A23578002168EB /* subBg.png */; };
@@ -59,6 +60,7 @@
 		1B25935229DEAA9E003B00A9 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		349812DBBEC10AB841F78426 /* Pods_Salon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Salon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4560316B20AFD9692F91CBD8 /* Pods-Salon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salon.debug.xcconfig"; path = "Target Support Files/Pods-Salon/Pods-Salon.debug.xcconfig"; sourceTree = "<group>"; };
+		AC7A266429ECFEF1003D14D1 /* EditingUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingUser.swift; sourceTree = "<group>"; };
 		C2F3539954825157C35A487F /* Pods-Salon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salon.release.xcconfig"; path = "Target Support Files/Pods-Salon/Pods-Salon.release.xcconfig"; sourceTree = "<group>"; };
 		D81488CA24A2266D002168EB /* New-Hairstyles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "New-Hairstyles.jpg"; sourceTree = "<group>"; };
 		D81488D024A23097002168EB /* Saloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Saloon.png; sourceTree = "<group>"; };
@@ -129,6 +131,14 @@
 				0CAF471B29DAF24C0093D108 /* SalonHome.swift */,
 			);
 			path = HomeSalon;
+			sourceTree = "<group>";
+		};
+		AC7A266329ECFED0003D14D1 /* Editing User  */ = {
+			isa = PBXGroup;
+			children = (
+				AC7A266429ECFEF1003D14D1 /* EditingUser.swift */,
+			);
+			path = "Editing User ";
 			sourceTree = "<group>";
 		};
 		B57D6CC4EDB7E1F28DDB47F6 /* Pods */ = {
@@ -230,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				D82E51CA2484BF8C00AD3D75 /* Login.swift */,
+				AC7A266329ECFED0003D14D1 /* Editing User  */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -462,6 +473,7 @@
 				D8251AAA24A0CB790072EAA3 /* Home.swift in Sources */,
 				D82E51C92484BF8100AD3D75 /* Register.swift in Sources */,
 				1B25935329DEAA9E003B00A9 /* Service.swift in Sources */,
+				AC7A266529ECFEF1003D14D1 /* EditingUser.swift in Sources */,
 				D82AF9EF249CADDA00C4E265 /* KaedeTextField.swift in Sources */,
 				D82AF9EE249CADDA00C4E265 /* TextFieldEffects.swift in Sources */,
 			);
