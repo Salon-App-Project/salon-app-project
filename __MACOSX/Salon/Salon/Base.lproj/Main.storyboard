@@ -404,29 +404,6 @@
                                             <outlet property="delegate" destination="SdV-1F-hCs" id="h8d-zH-xci"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="znc-fd-K5q" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
-                                        <rect key="frame" x="42" y="401" width="330" height="40"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <outlet property="delegate" destination="SdV-1F-hCs" id="dhb-Pz-OaM"/>
-                                        </connections>
-                                    </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVJ-Ir-Re5" customClass="LGButton" customModule="LGButton">
                                         <rect key="frame" x="88" y="603" width="238" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -476,11 +453,59 @@
                                             <action selector="btnSignUp:" destination="SdV-1F-hCs" eventType="touchUpInside" id="bRG-hS-Xsm"/>
                                         </connections>
                                     </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="znc-fd-K5q" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="461" width="330" height="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="SdV-1F-hCs" id="dhb-Pz-OaM"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZVo-oG-ivp" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="401" width="330" height="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="SdV-1F-hCs" id="cOI-M0-1Ht"/>
+                                        </connections>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="sVJ-Ir-Re5" secondAttribute="trailing" constant="88" id="25b-l2-uD3"/>
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="leading" secondItem="YjF-d1-xfL" secondAttribute="leading" id="3za-kq-hP1"/>
+                                    <constraint firstItem="ZVo-oG-ivp" firstAttribute="leading" secondItem="mKC-0M-NJa" secondAttribute="leading" id="4hy-R2-Ulh"/>
+                                    <constraint firstItem="ZVo-oG-ivp" firstAttribute="top" secondItem="mKC-0M-NJa" secondAttribute="bottom" constant="20" id="5ro-qa-w5B"/>
                                     <constraint firstAttribute="width" constant="414" id="6kj-ao-Iah"/>
                                     <constraint firstItem="YjF-d1-xfL" firstAttribute="centerX" secondItem="d8K-8v-3sD" secondAttribute="centerX" id="8uc-Bd-35Z"/>
                                     <constraint firstItem="SOb-Sd-UuV" firstAttribute="leading" secondItem="fgM-JB-bHu" secondAttribute="leading" id="92B-18-nP1"/>
@@ -488,6 +513,7 @@
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="width" secondItem="YjF-d1-xfL" secondAttribute="width" id="G6T-Xo-uyz"/>
                                     <constraint firstItem="mKC-0M-NJa" firstAttribute="width" secondItem="SOb-Sd-UuV" secondAttribute="width" id="Gas-bK-qND"/>
                                     <constraint firstItem="znc-fd-K5q" firstAttribute="leading" secondItem="mKC-0M-NJa" secondAttribute="leading" id="Hy1-RV-Imw"/>
+                                    <constraint firstItem="ZVo-oG-ivp" firstAttribute="width" secondItem="mKC-0M-NJa" secondAttribute="width" id="KdY-cS-RhQ"/>
                                     <constraint firstItem="mKC-0M-NJa" firstAttribute="trailing" secondItem="SOb-Sd-UuV" secondAttribute="trailing" id="MiO-Ue-bI1"/>
                                     <constraint firstAttribute="bottom" secondItem="sVJ-Ir-Re5" secondAttribute="bottom" constant="8" id="PVW-HX-z9M"/>
                                     <constraint firstItem="fgM-JB-bHu" firstAttribute="top" secondItem="YjF-d1-xfL" secondAttribute="bottom" constant="101" id="Qkt-hc-osB"/>
@@ -495,10 +521,12 @@
                                     <constraint firstItem="YjF-d1-xfL" firstAttribute="top" secondItem="d8K-8v-3sD" secondAttribute="top" constant="30" id="S5A-Hg-JPo"/>
                                     <constraint firstItem="znc-fd-K5q" firstAttribute="height" secondItem="mKC-0M-NJa" secondAttribute="height" id="T0g-4Z-869"/>
                                     <constraint firstAttribute="trailing" secondItem="fgM-JB-bHu" secondAttribute="trailing" constant="42" id="UW0-zs-R0k"/>
+                                    <constraint firstItem="ZVo-oG-ivp" firstAttribute="trailing" secondItem="mKC-0M-NJa" secondAttribute="trailing" id="X11-BQ-dUv"/>
                                     <constraint firstItem="mKC-0M-NJa" firstAttribute="leading" secondItem="SOb-Sd-UuV" secondAttribute="leading" id="X2r-jB-3do"/>
                                     <constraint firstItem="fgM-JB-bHu" firstAttribute="leading" secondItem="d8K-8v-3sD" secondAttribute="leading" constant="42" id="b6Q-c4-QtS"/>
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="trailing" secondItem="YjF-d1-xfL" secondAttribute="trailing" id="ggl-JX-gVO"/>
-                                    <constraint firstItem="znc-fd-K5q" firstAttribute="top" secondItem="mKC-0M-NJa" secondAttribute="bottom" constant="20" id="hPE-4e-efF"/>
+                                    <constraint firstItem="ZVo-oG-ivp" firstAttribute="height" secondItem="mKC-0M-NJa" secondAttribute="height" id="i7g-sZ-c8J"/>
+                                    <constraint firstItem="znc-fd-K5q" firstAttribute="top" secondItem="ZVo-oG-ivp" secondAttribute="bottom" constant="20" id="kUx-3D-T35"/>
                                     <constraint firstItem="znc-fd-K5q" firstAttribute="width" secondItem="mKC-0M-NJa" secondAttribute="width" id="mCC-ni-Xbv"/>
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="bottom" secondItem="YjF-d1-xfL" secondAttribute="bottom" id="nKz-f3-QFy"/>
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="top" secondItem="YjF-d1-xfL" secondAttribute="top" id="o9o-Wv-6Pt"/>
@@ -634,13 +662,14 @@
                                     <action selector="bPastClicked:" destination="mli-ge-DHs" eventType="touchUpInside" id="OpW-bZ-b6J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgS-nV-U8k">
-                                <rect key="frame" x="110.66666666666669" y="606" width="193" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgS-nV-U8k">
+                                <rect key="frame" x="95" y="614" width="193" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Update Profile" image="Edit Profile"/>
                                 <connections>
                                     <action selector="bUpdateProfileClicked:" destination="mli-ge-DHs" eventType="touchUpInside" id="CGj-VQ-BOI"/>
+                                    <segue destination="EZ0-Fd-tNV" kind="show" id="dKZ-CJ-XMb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -764,8 +793,8 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Update Profile" image="Edit Profile"/>
                                 <connections>
-                                    <action selector="bUpdateProfileClicked:" destination="mli-ge-DHs" eventType="touchUpInside" id="IDA-SD-O0s"/>
                                     <action selector="bUpdateProfileClicked:" destination="XyP-CL-AQJ" eventType="touchUpInside" id="mQC-qp-leF"/>
+                                    <segue destination="OQf-2Z-ntX" kind="show" id="s4C-kN-DqW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNw-t4-9Hl">
@@ -810,13 +839,507 @@
             </objects>
             <point key="canvasLocation" x="1442" y="-2071"/>
         </scene>
+        <!--Register-->
+        <scene sceneID="rNl-3H-00d">
+            <objects>
+                <viewController storyboardIdentifier="Register" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EZ0-Fd-tNV" userLabel="Register" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oFI-NK-JCB"/>
+                        <viewControllerLayoutGuide type="bottom" id="vLE-Jh-NlV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eCN-hK-6iw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zg-xk-Qrk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" red="0.44705882349999998" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="IUh-7T-hem"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Me-7B-p3b">
+                                <rect key="frame" x="0.0" y="140" width="414" height="661"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="F4V-ec-1ly">
+                                        <rect key="frame" x="162" y="30" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="EHv-9f-0xz"/>
+                                            <constraint firstAttribute="width" constant="90" id="UUa-Rm-khP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lb0-49-dRG">
+                                        <rect key="frame" x="162" y="30" width="90" height="90"/>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hEM-4p-Rcc" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="221" width="330" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="330" id="62r-Vx-igI"/>
+                                            <constraint firstAttribute="height" constant="40" id="dCC-CA-Bci"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wjF-AD-bYV" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="281" width="330" height="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1uF-Fa-XJS" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="341" width="330" height="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rMf-38-7uM" customClass="LGButton" customModule="LGButton">
+                                        <rect key="frame" x="88" y="603" width="238" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="KQG-hs-4LU"/>
+                                            <constraint firstAttribute="width" constant="238" id="uJe-4H-gAE"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" red="0.44705882349999998" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="SUBMIT"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleFontName" value="OpenSans-bold"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="rightImageSrc" value="Submit"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="rightImageColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightIconFontSize">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightImageWidth">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightImageHeight">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="loadingSpinnerColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kj1-nf-Nme" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="461" width="330" height="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sj3-h2-VF3" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="401" width="330" height="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lb0-49-dRG" firstAttribute="height" secondItem="F4V-ec-1ly" secondAttribute="height" id="1uq-S1-Ek0"/>
+                                    <constraint firstItem="wjF-AD-bYV" firstAttribute="top" secondItem="hEM-4p-Rcc" secondAttribute="bottom" constant="20" id="2KG-1l-WEH"/>
+                                    <constraint firstItem="rMf-38-7uM" firstAttribute="leading" secondItem="8Me-7B-p3b" secondAttribute="leading" constant="88" id="474-97-DjN"/>
+                                    <constraint firstItem="F4V-ec-1ly" firstAttribute="top" secondItem="8Me-7B-p3b" secondAttribute="top" constant="30" id="4f4-vZ-9Tc"/>
+                                    <constraint firstItem="Sj3-h2-VF3" firstAttribute="height" secondItem="1uF-Fa-XJS" secondAttribute="height" id="6DH-GE-8ij"/>
+                                    <constraint firstItem="wjF-AD-bYV" firstAttribute="width" secondItem="hEM-4p-Rcc" secondAttribute="width" id="7lk-bz-Zu1"/>
+                                    <constraint firstItem="1uF-Fa-XJS" firstAttribute="trailing" secondItem="wjF-AD-bYV" secondAttribute="trailing" id="8Cb-0c-iMY"/>
+                                    <constraint firstItem="lb0-49-dRG" firstAttribute="leading" secondItem="F4V-ec-1ly" secondAttribute="leading" id="8tx-Ce-Sxl"/>
+                                    <constraint firstItem="wjF-AD-bYV" firstAttribute="trailing" secondItem="hEM-4p-Rcc" secondAttribute="trailing" id="Aqa-DI-slX"/>
+                                    <constraint firstItem="lb0-49-dRG" firstAttribute="bottom" secondItem="F4V-ec-1ly" secondAttribute="bottom" id="BAu-xJ-JVK"/>
+                                    <constraint firstItem="wjF-AD-bYV" firstAttribute="leading" secondItem="hEM-4p-Rcc" secondAttribute="leading" id="Fw1-Dv-rBI"/>
+                                    <constraint firstItem="hEM-4p-Rcc" firstAttribute="top" secondItem="F4V-ec-1ly" secondAttribute="bottom" constant="101" id="JSc-EI-iIv"/>
+                                    <constraint firstItem="Sj3-h2-VF3" firstAttribute="top" secondItem="1uF-Fa-XJS" secondAttribute="bottom" constant="20" id="OSc-40-DnV"/>
+                                    <constraint firstItem="1uF-Fa-XJS" firstAttribute="width" secondItem="wjF-AD-bYV" secondAttribute="width" id="Oel-Zf-7Yg"/>
+                                    <constraint firstAttribute="width" constant="414" id="PeI-So-m08"/>
+                                    <constraint firstItem="Kj1-nf-Nme" firstAttribute="top" secondItem="Sj3-h2-VF3" secondAttribute="bottom" constant="20" id="S1x-PH-7kf"/>
+                                    <constraint firstItem="1uF-Fa-XJS" firstAttribute="top" secondItem="wjF-AD-bYV" secondAttribute="bottom" constant="20" id="T00-7Y-I8t"/>
+                                    <constraint firstAttribute="trailing" secondItem="hEM-4p-Rcc" secondAttribute="trailing" constant="42" id="TEu-tK-JDW"/>
+                                    <constraint firstItem="F4V-ec-1ly" firstAttribute="centerX" secondItem="8Me-7B-p3b" secondAttribute="centerX" id="TIs-Qc-jc8"/>
+                                    <constraint firstItem="Kj1-nf-Nme" firstAttribute="leading" secondItem="1uF-Fa-XJS" secondAttribute="leading" id="VsW-aO-eaN"/>
+                                    <constraint firstItem="1uF-Fa-XJS" firstAttribute="height" secondItem="wjF-AD-bYV" secondAttribute="height" id="ZX1-8B-R5O"/>
+                                    <constraint firstItem="Sj3-h2-VF3" firstAttribute="trailing" secondItem="1uF-Fa-XJS" secondAttribute="trailing" id="arK-1i-Tpr"/>
+                                    <constraint firstItem="hEM-4p-Rcc" firstAttribute="leading" secondItem="8Me-7B-p3b" secondAttribute="leading" constant="42" id="b6R-Ff-NTd"/>
+                                    <constraint firstItem="lb0-49-dRG" firstAttribute="top" secondItem="F4V-ec-1ly" secondAttribute="top" id="boG-sX-G8d"/>
+                                    <constraint firstItem="wjF-AD-bYV" firstAttribute="height" secondItem="hEM-4p-Rcc" secondAttribute="height" id="eXt-lr-Lz7"/>
+                                    <constraint firstItem="Kj1-nf-Nme" firstAttribute="trailing" secondItem="1uF-Fa-XJS" secondAttribute="trailing" id="fPp-Mv-Wv0"/>
+                                    <constraint firstAttribute="bottom" secondItem="rMf-38-7uM" secondAttribute="bottom" constant="8" id="gym-9J-IVP"/>
+                                    <constraint firstItem="Sj3-h2-VF3" firstAttribute="width" secondItem="1uF-Fa-XJS" secondAttribute="width" id="hsJ-ur-bJ4"/>
+                                    <constraint firstItem="1uF-Fa-XJS" firstAttribute="leading" secondItem="wjF-AD-bYV" secondAttribute="leading" id="mPe-qg-SCt"/>
+                                    <constraint firstItem="Kj1-nf-Nme" firstAttribute="width" secondItem="1uF-Fa-XJS" secondAttribute="width" id="n7y-Z2-rNn"/>
+                                    <constraint firstAttribute="trailing" secondItem="rMf-38-7uM" secondAttribute="trailing" constant="88" id="rjp-ze-Dxe"/>
+                                    <constraint firstAttribute="height" constant="661" id="tX9-Db-zDd"/>
+                                    <constraint firstItem="Sj3-h2-VF3" firstAttribute="leading" secondItem="1uF-Fa-XJS" secondAttribute="leading" id="uo8-kz-STs"/>
+                                    <constraint firstItem="lb0-49-dRG" firstAttribute="width" secondItem="F4V-ec-1ly" secondAttribute="width" id="xVn-dH-a91"/>
+                                    <constraint firstItem="lb0-49-dRG" firstAttribute="trailing" secondItem="F4V-ec-1ly" secondAttribute="trailing" id="yBq-qX-cY3"/>
+                                    <constraint firstItem="Kj1-nf-Nme" firstAttribute="height" secondItem="1uF-Fa-XJS" secondAttribute="height" id="zS9-v7-MJS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="vLE-Jh-NlV" firstAttribute="top" secondItem="8Me-7B-p3b" secondAttribute="bottom" constant="61" id="Mcp-T0-dJe"/>
+                            <constraint firstAttribute="trailing" secondItem="6zg-xk-Qrk" secondAttribute="trailing" id="Q9b-wG-Vda"/>
+                            <constraint firstAttribute="trailing" secondItem="8Me-7B-p3b" secondAttribute="trailing" id="ZuU-qf-wdF"/>
+                            <constraint firstItem="8Me-7B-p3b" firstAttribute="top" secondItem="oFI-NK-JCB" secondAttribute="bottom" constant="52" id="i0J-5T-SxP"/>
+                            <constraint firstItem="8Me-7B-p3b" firstAttribute="leading" secondItem="eCN-hK-6iw" secondAttribute="leading" id="ixQ-ai-vmZ"/>
+                            <constraint firstItem="6zg-xk-Qrk" firstAttribute="leading" secondItem="eCN-hK-6iw" secondAttribute="leading" id="j2w-FI-l9e"/>
+                            <constraint firstItem="6zg-xk-Qrk" firstAttribute="top" secondItem="eCN-hK-6iw" secondAttribute="top" id="olK-E6-7Eq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="User Profile" id="fhG-7j-LbW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7a-Ar-Yeb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2259" y="-1386"/>
+        </scene>
+        <!--Salon profile-->
+        <scene sceneID="1Nr-bs-G8r">
+            <objects>
+                <viewController storyboardIdentifier="Register" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OQf-2Z-ntX" userLabel="Salon profile" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I1n-Mc-5hG"/>
+                        <viewControllerLayoutGuide type="bottom" id="DH5-5W-1Qt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Dg-ZY-Ug9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aos-a4-1N0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" red="0.44705882349999998" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="C7q-Zo-JCe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NL7-tg-E0g">
+                                <rect key="frame" x="0.0" y="140" width="414" height="661"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="0pP-Kk-gkd">
+                                        <rect key="frame" x="162" y="30" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="RuD-tW-AXe"/>
+                                            <constraint firstAttribute="width" constant="90" id="o09-eR-fEN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gl5-FC-HJC">
+                                        <rect key="frame" x="162" y="30" width="90" height="90"/>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tJJ-ZF-1Xx" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="221" width="330" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="330" id="EeL-te-Cz3"/>
+                                            <constraint firstAttribute="height" constant="40" id="TN3-JV-fzP"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arR-iS-pYe" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="281" width="330" height="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IYx-zf-6IK" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="341" width="330" height="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgV-fV-UzX" customClass="LGButton" customModule="LGButton">
+                                        <rect key="frame" x="88" y="603" width="238" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="IwY-b3-4g4"/>
+                                            <constraint firstAttribute="width" constant="238" id="kg3-yo-s0H"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" red="0.44705882349999998" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="SUBMIT"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleFontName" value="OpenSans-bold"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="rightImageSrc" value="Submit"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="rightImageColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightIconFontSize">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightImageWidth">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightImageHeight">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="loadingSpinnerColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="63x-X2-2SI" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="461" width="330" height="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="03i-I1-qL2" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="401" width="330" height="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gl5-FC-HJC" firstAttribute="height" secondItem="0pP-Kk-gkd" secondAttribute="height" id="15P-xj-3BP"/>
+                                    <constraint firstItem="tJJ-ZF-1Xx" firstAttribute="leading" secondItem="NL7-tg-E0g" secondAttribute="leading" constant="42" id="2xI-TY-tBp"/>
+                                    <constraint firstAttribute="trailing" secondItem="wgV-fV-UzX" secondAttribute="trailing" constant="88" id="4Jo-xy-CgT"/>
+                                    <constraint firstItem="IYx-zf-6IK" firstAttribute="width" secondItem="arR-iS-pYe" secondAttribute="width" id="781-D5-APr"/>
+                                    <constraint firstItem="IYx-zf-6IK" firstAttribute="height" secondItem="arR-iS-pYe" secondAttribute="height" id="8HW-7a-IVj"/>
+                                    <constraint firstAttribute="width" constant="414" id="ENv-6u-PwS"/>
+                                    <constraint firstItem="IYx-zf-6IK" firstAttribute="trailing" secondItem="arR-iS-pYe" secondAttribute="trailing" id="H4H-dn-DfJ"/>
+                                    <constraint firstItem="0pP-Kk-gkd" firstAttribute="centerX" secondItem="NL7-tg-E0g" secondAttribute="centerX" id="Iw0-wr-pbO"/>
+                                    <constraint firstItem="wgV-fV-UzX" firstAttribute="leading" secondItem="NL7-tg-E0g" secondAttribute="leading" constant="88" id="JT5-em-mgU"/>
+                                    <constraint firstItem="0pP-Kk-gkd" firstAttribute="top" secondItem="NL7-tg-E0g" secondAttribute="top" constant="30" id="MVg-8h-2GK"/>
+                                    <constraint firstAttribute="bottom" secondItem="wgV-fV-UzX" secondAttribute="bottom" constant="8" id="OHt-Di-ueR"/>
+                                    <constraint firstItem="03i-I1-qL2" firstAttribute="width" secondItem="IYx-zf-6IK" secondAttribute="width" id="PnL-D4-CIV"/>
+                                    <constraint firstItem="gl5-FC-HJC" firstAttribute="trailing" secondItem="0pP-Kk-gkd" secondAttribute="trailing" id="RCd-va-Jls"/>
+                                    <constraint firstItem="gl5-FC-HJC" firstAttribute="width" secondItem="0pP-Kk-gkd" secondAttribute="width" id="Sao-2l-y5V"/>
+                                    <constraint firstItem="03i-I1-qL2" firstAttribute="leading" secondItem="IYx-zf-6IK" secondAttribute="leading" id="V8p-8S-dPi"/>
+                                    <constraint firstItem="IYx-zf-6IK" firstAttribute="top" secondItem="arR-iS-pYe" secondAttribute="bottom" constant="20" id="Xg6-Zj-inc"/>
+                                    <constraint firstItem="gl5-FC-HJC" firstAttribute="top" secondItem="0pP-Kk-gkd" secondAttribute="top" id="ZAC-9d-gJ4"/>
+                                    <constraint firstItem="63x-X2-2SI" firstAttribute="top" secondItem="03i-I1-qL2" secondAttribute="bottom" constant="20" id="ZRY-hA-AIy"/>
+                                    <constraint firstItem="arR-iS-pYe" firstAttribute="trailing" secondItem="tJJ-ZF-1Xx" secondAttribute="trailing" id="ZtT-zf-s6T"/>
+                                    <constraint firstItem="63x-X2-2SI" firstAttribute="height" secondItem="IYx-zf-6IK" secondAttribute="height" id="ckb-5U-pIg"/>
+                                    <constraint firstItem="arR-iS-pYe" firstAttribute="top" secondItem="tJJ-ZF-1Xx" secondAttribute="bottom" constant="20" id="eEr-x7-I0Q"/>
+                                    <constraint firstItem="03i-I1-qL2" firstAttribute="trailing" secondItem="IYx-zf-6IK" secondAttribute="trailing" id="eLk-SG-OTI"/>
+                                    <constraint firstItem="arR-iS-pYe" firstAttribute="leading" secondItem="tJJ-ZF-1Xx" secondAttribute="leading" id="edd-z2-Igk"/>
+                                    <constraint firstAttribute="height" constant="661" id="gvr-gW-9yv"/>
+                                    <constraint firstItem="gl5-FC-HJC" firstAttribute="bottom" secondItem="0pP-Kk-gkd" secondAttribute="bottom" id="iaI-z7-87y"/>
+                                    <constraint firstItem="arR-iS-pYe" firstAttribute="width" secondItem="tJJ-ZF-1Xx" secondAttribute="width" id="j1h-Ff-bhi"/>
+                                    <constraint firstItem="gl5-FC-HJC" firstAttribute="leading" secondItem="0pP-Kk-gkd" secondAttribute="leading" id="jf5-EL-c5R"/>
+                                    <constraint firstItem="arR-iS-pYe" firstAttribute="height" secondItem="tJJ-ZF-1Xx" secondAttribute="height" id="ouH-DS-tEA"/>
+                                    <constraint firstItem="63x-X2-2SI" firstAttribute="leading" secondItem="IYx-zf-6IK" secondAttribute="leading" id="qJq-e5-MBl"/>
+                                    <constraint firstItem="03i-I1-qL2" firstAttribute="height" secondItem="IYx-zf-6IK" secondAttribute="height" id="quS-YJ-TYI"/>
+                                    <constraint firstItem="tJJ-ZF-1Xx" firstAttribute="top" secondItem="0pP-Kk-gkd" secondAttribute="bottom" constant="101" id="uDF-9D-8XR"/>
+                                    <constraint firstItem="63x-X2-2SI" firstAttribute="trailing" secondItem="IYx-zf-6IK" secondAttribute="trailing" id="vtv-9s-dTa"/>
+                                    <constraint firstItem="63x-X2-2SI" firstAttribute="width" secondItem="IYx-zf-6IK" secondAttribute="width" id="wCy-aE-0Q0"/>
+                                    <constraint firstItem="IYx-zf-6IK" firstAttribute="leading" secondItem="arR-iS-pYe" secondAttribute="leading" id="wcB-Rg-fBq"/>
+                                    <constraint firstAttribute="trailing" secondItem="tJJ-ZF-1Xx" secondAttribute="trailing" constant="42" id="xIY-fR-G7N"/>
+                                    <constraint firstItem="03i-I1-qL2" firstAttribute="top" secondItem="IYx-zf-6IK" secondAttribute="bottom" constant="20" id="zmp-3B-vgM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="NL7-tg-E0g" firstAttribute="top" secondItem="I1n-Mc-5hG" secondAttribute="bottom" constant="52" id="GHg-Mb-CmR"/>
+                            <constraint firstItem="DH5-5W-1Qt" firstAttribute="top" secondItem="NL7-tg-E0g" secondAttribute="bottom" constant="61" id="LX3-RC-SUl"/>
+                            <constraint firstAttribute="trailing" secondItem="NL7-tg-E0g" secondAttribute="trailing" id="YnU-aF-oQ5"/>
+                            <constraint firstItem="Aos-a4-1N0" firstAttribute="top" secondItem="3Dg-ZY-Ug9" secondAttribute="top" id="eiW-En-Cbh"/>
+                            <constraint firstItem="NL7-tg-E0g" firstAttribute="leading" secondItem="3Dg-ZY-Ug9" secondAttribute="leading" id="jWy-4L-VfC"/>
+                            <constraint firstItem="Aos-a4-1N0" firstAttribute="leading" secondItem="3Dg-ZY-Ug9" secondAttribute="leading" id="pEg-wY-HLg"/>
+                            <constraint firstAttribute="trailing" secondItem="Aos-a4-1N0" secondAttribute="trailing" id="qaN-Ao-o2Q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Salon User Profile" id="hIq-vv-AV1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qsb-Lz-WCh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2258" y="-2046"/>
+        </scene>
     </scenes>
     <designables>
+        <designable name="03i-I1-qL2">
+            <size key="intrinsicContentSize" width="79" height="24"/>
+        </designable>
+        <designable name="1uF-Fa-XJS">
+            <size key="intrinsicContentSize" width="79" height="24"/>
+        </designable>
+        <designable name="63x-X2-2SI">
+            <size key="intrinsicContentSize" width="128.66666666666666" height="25"/>
+        </designable>
         <designable name="AnJ-KM-cUB">
             <size key="intrinsicContentSize" width="85" height="25"/>
         </designable>
-        <designable name="La1-F6-Uct">
-            <size key="intrinsicContentSize" width="10" height="10"/>
+        <designable name="IYx-zf-6IK">
+            <size key="intrinsicContentSize" width="79" height="24"/>
+        </designable>
+        <designable name="Kj1-nf-Nme">
+            <size key="intrinsicContentSize" width="128.66666666666666" height="25"/>
         </designable>
         <designable name="Q2w-bx-ppH">
             <size key="intrinsicContentSize" width="79" height="24"/>
@@ -824,20 +1347,29 @@
         <designable name="SOb-Sd-UuV">
             <size key="intrinsicContentSize" width="49.333333333333336" height="25"/>
         </designable>
-        <designable name="TAx-AV-Cik">
-            <size key="intrinsicContentSize" width="10" height="10"/>
+        <designable name="Sj3-h2-VF3">
+            <size key="intrinsicContentSize" width="79" height="24"/>
+        </designable>
+        <designable name="ZVo-oG-ivp">
+            <size key="intrinsicContentSize" width="79" height="24"/>
+        </designable>
+        <designable name="arR-iS-pYe">
+            <size key="intrinsicContentSize" width="49.333333333333336" height="25"/>
         </designable>
         <designable name="fgM-JB-bHu">
+            <size key="intrinsicContentSize" width="45.333333333333336" height="25"/>
+        </designable>
+        <designable name="hEM-4p-Rcc">
             <size key="intrinsicContentSize" width="45.333333333333336" height="25"/>
         </designable>
         <designable name="mKC-0M-NJa">
             <size key="intrinsicContentSize" width="79" height="24"/>
         </designable>
-        <designable name="mQR-FM-Aip">
-            <size key="intrinsicContentSize" width="10" height="10"/>
+        <designable name="tJJ-ZF-1Xx">
+            <size key="intrinsicContentSize" width="45.333333333333336" height="25"/>
         </designable>
-        <designable name="sVJ-Ir-Re5">
-            <size key="intrinsicContentSize" width="10" height="10"/>
+        <designable name="wjF-AD-bYV">
+            <size key="intrinsicContentSize" width="49.333333333333336" height="25"/>
         </designable>
         <designable name="znc-fd-K5q">
             <size key="intrinsicContentSize" width="128.66666666666666" height="25"/>
