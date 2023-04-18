@@ -660,6 +660,7 @@
                                 <state key="normal" title="Past Appointments" image="Past Appointment"/>
                                 <connections>
                                     <action selector="bPastClicked:" destination="mli-ge-DHs" eventType="touchUpInside" id="OpW-bZ-b6J"/>
+                                    <segue destination="DaV-jA-TOI" kind="show" id="az4-Jq-Ybn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgS-nV-U8k">
@@ -705,6 +706,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pqz-ts-yzv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1443" y="-1394"/>
+        </scene>
+        <!--Past App View-->
+        <scene sceneID="yNA-Ln-bUG">
+            <objects>
+                <tableViewController id="DaV-jA-TOI" customClass="PastAppView" customModule="Salon" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="qTK-c4-ccI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="o3V-i0-qPx">
+                                <rect key="frame" x="0.0" y="50" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o3V-i0-qPx" id="uuq-Zb-c2r">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DaV-jA-TOI" id="Hjp-3I-23S"/>
+                            <outlet property="delegate" destination="DaV-jA-TOI" id="5Wo-fg-fJS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="iGx-oF-Dp4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y8M-eo-DI1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2286" y="-1383"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yC2-eG-cmK">
