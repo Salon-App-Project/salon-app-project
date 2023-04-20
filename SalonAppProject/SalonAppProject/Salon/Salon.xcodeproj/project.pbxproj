@@ -13,6 +13,7 @@
 		0C73EBC229E44BA4004AD3AA /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C73EBC129E44BA4004AD3AA /* UserDetails.swift */; };
 		0C780CC529E2EDA80084C847 /* SalonDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C780CC429E2EDA80084C847 /* SalonDetails.swift */; };
 		0CAF471C29DAF24C0093D108 /* SalonHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF471B29DAF24C0093D108 /* SalonHome.swift */; };
+<<<<<<< HEAD:SalonAppProject/SalonAppProject/Salon/Salon.xcodeproj/project.pbxproj
 		0CE6FF9929E6E53700333A32 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE6FF9829E6E53700333A32 /* Appointment.swift */; };
 		0CF7DFDD29DBF303009E97F7 /* AddStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7DFDC29DBF303009E97F7 /* AddStyle.swift */; };
 		0CF7F04029D85CFD005C2BA5 /* FindSalonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7F03F29D85CFC005C2BA5 /* FindSalonViewController.swift */; };
@@ -21,6 +22,13 @@
 		4E757C6629E9E602002CC40F /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E757C6529E9E602002CC40F /* 3.jpg */; };
 		4E757C6829E9E60A002CC40F /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E757C6729E9E60A002CC40F /* 4.jpg */; };
 		4E757C6C29F0D741002CC40F /* Gallery in Resources */ = {isa = PBXBuildFile; fileRef = 4E757C6B29F0D741002CC40F /* Gallery */; };
+=======
+		1B17973B29E7943900F48DE2 /* PastAppointments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17973A29E7943900F48DE2 /* PastAppointments.swift */; };
+		1B17973D29E7944B00F48DE2 /* PastAppTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17973C29E7944B00F48DE2 /* PastAppTable.swift */; };
+		1B17973F29E7946200F48DE2 /* PastAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17973E29E7946200F48DE2 /* PastAppCell.swift */; };
+		1B25935329DEAA9E003B00A9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B25935229DEAA9E003B00A9 /* Service.swift */; };
+		AC7A266529ECFEF1003D14D1 /* EditingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7A266429ECFEF1003D14D1 /* EditingUser.swift */; };
+>>>>>>> main:__MACOSX/Salon/Salon.xcodeproj/project.pbxproj
 		D81488CB24A2266E002168EB /* New-Hairstyles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D81488CA24A2266D002168EB /* New-Hairstyles.jpg */; };
 		D81488D324A23097002168EB /* Salon.png in Resources */ = {isa = PBXBuildFile; fileRef = D81488D024A23097002168EB /* Salon.png */; };
 		D81488D824A233B2002168EB /* SubCateogry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81488D724A233B2002168EB /* SubCateogry.swift */; };
@@ -64,6 +72,7 @@
 		0C73EBC129E44BA4004AD3AA /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		0C780CC429E2EDA80084C847 /* SalonDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonDetails.swift; sourceTree = "<group>"; };
 		0CAF471B29DAF24C0093D108 /* SalonHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonHome.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD:SalonAppProject/SalonAppProject/Salon/Salon.xcodeproj/project.pbxproj
 		0CE6FF9829E6E53700333A32 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		0CF7DFDC29DBF303009E97F7 /* AddStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStyle.swift; sourceTree = "<group>"; };
 		0CF7F03F29D85CFC005C2BA5 /* FindSalonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSalonViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +83,15 @@
 		4E757C6529E9E602002CC40F /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = ../../../../../../../../../Volumes/Lexar/3.jpg; sourceTree = "<group>"; };
 		4E757C6729E9E60A002CC40F /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4.jpg; path = ../../../../../../../../../Volumes/Lexar/4.jpg; sourceTree = "<group>"; };
 		4E757C6B29F0D741002CC40F /* Gallery */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Gallery; sourceTree = "<group>"; };
+=======
+		1B17973A29E7943900F48DE2 /* PastAppointments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAppointments.swift; sourceTree = "<group>"; };
+		1B17973C29E7944B00F48DE2 /* PastAppTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAppTable.swift; sourceTree = "<group>"; };
+		1B17973E29E7946200F48DE2 /* PastAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAppCell.swift; sourceTree = "<group>"; };
+		1B25935229DEAA9E003B00A9 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		349812DBBEC10AB841F78426 /* Pods_Salon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Salon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4560316B20AFD9692F91CBD8 /* Pods-Salon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salon.debug.xcconfig"; path = "Target Support Files/Pods-Salon/Pods-Salon.debug.xcconfig"; sourceTree = "<group>"; };
+		AC7A266429ECFEF1003D14D1 /* EditingUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingUser.swift; sourceTree = "<group>"; };
+>>>>>>> main:__MACOSX/Salon/Salon.xcodeproj/project.pbxproj
 		C2F3539954825157C35A487F /* Pods-Salon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salon.release.xcconfig"; path = "Target Support Files/Pods-Salon/Pods-Salon.release.xcconfig"; sourceTree = "<group>"; };
 		D81488CA24A2266D002168EB /* New-Hairstyles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "New-Hairstyles.jpg"; sourceTree = "<group>"; };
 		D81488D024A23097002168EB /* Salon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salon.png; sourceTree = "<group>"; };
@@ -132,10 +150,14 @@
 			isa = PBXGroup;
 			children = (
 				0C191D4A29DAA2AC00549997 /* User.swift */,
+<<<<<<< HEAD:SalonAppProject/SalonAppProject/Salon/Salon.xcodeproj/project.pbxproj
 				0C780CC429E2EDA80084C847 /* SalonDetails.swift */,
 				0C6A734A29E3FFBA0064672F /* Style.swift */,
 				0C73EBC129E44BA4004AD3AA /* UserDetails.swift */,
 				0CE6FF9829E6E53700333A32 /* Appointment.swift */,
+=======
+				1B25935229DEAA9E003B00A9 /* Service.swift */,
+>>>>>>> main:__MACOSX/Salon/Salon.xcodeproj/project.pbxproj
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,6 +169,14 @@
 				0CF7DFDC29DBF303009E97F7 /* AddStyle.swift */,
 			);
 			path = HomeSalon;
+			sourceTree = "<group>";
+		};
+		AC7A266329ECFED0003D14D1 /* Editing User  */ = {
+			isa = PBXGroup;
+			children = (
+				AC7A266429ECFEF1003D14D1 /* EditingUser.swift */,
+			);
+			path = "Editing User ";
 			sourceTree = "<group>";
 		};
 		B57D6CC4EDB7E1F28DDB47F6 /* Pods */ = {
@@ -178,7 +208,13 @@
 				D81488D724A233B2002168EB /* SubCateogry.swift */,
 				0CF7F03F29D85CFC005C2BA5 /* FindSalonViewController.swift */,
 				D8251AA924A0CB790072EAA3 /* Home.swift */,
+<<<<<<< HEAD:SalonAppProject/SalonAppProject/Salon/Salon.xcodeproj/project.pbxproj
 				0CF7F04229D88200005C2BA5 /* SalonDetailsViewController.swift */,
+=======
+				1B17973A29E7943900F48DE2 /* PastAppointments.swift */,
+				1B17973C29E7944B00F48DE2 /* PastAppTable.swift */,
+				1B17973E29E7946200F48DE2 /* PastAppCell.swift */,
+>>>>>>> main:__MACOSX/Salon/Salon.xcodeproj/project.pbxproj
 			);
 			path = HomeUser;
 			sourceTree = "<group>";
@@ -252,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				D82E51CA2484BF8C00AD3D75 /* Login.swift */,
+				AC7A266329ECFED0003D14D1 /* Editing User  */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -470,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD:SalonAppProject/SalonAppProject/Salon/Salon.xcodeproj/project.pbxproj
 				D8BE412224AC65B300580BC6 /* StylishDetails.swift in Sources */,
 				D8BE412424AC65D000580BC6 /* BookAppointment.swift in Sources */,
 				D82E51D32484DDE900AD3D75 /* CommonClass.swift in Sources */,
@@ -477,6 +515,14 @@
 				D8AD266D249DFB9500F4072F /* HoshiTextField.swift in Sources */,
 				0C780CC529E2EDA80084C847 /* SalonDetails.swift in Sources */,
 				D81488D824A233B2002168EB /* SubCateogry.swift in Sources */,
+=======
+				1B17973D29E7944B00F48DE2 /* PastAppTable.swift in Sources */,
+				1B17973F29E7946200F48DE2 /* PastAppCell.swift in Sources */,
+				D82E51D32484DDE900AD3D75 /* CommonClass.swift in Sources */,
+				D848723224810F0100709F5F /* AppDelegate.swift in Sources */,
+				D8AD266D249DFB9500F4072F /* HoshiTextField.swift in Sources */,
+				1B17973B29E7943900F48DE2 /* PastAppointments.swift in Sources */,
+>>>>>>> main:__MACOSX/Salon/Salon.xcodeproj/project.pbxproj
 				0CAF471C29DAF24C0093D108 /* SalonHome.swift in Sources */,
 				D82E51CB2484BF8C00AD3D75 /* Login.swift in Sources */,
 				0CF7DFDD29DBF303009E97F7 /* AddStyle.swift in Sources */,
@@ -486,6 +532,8 @@
 				0CE6FF9929E6E53700333A32 /* Appointment.swift in Sources */,
 				D86C54A724B5AD16009235EF /* Profile.swift in Sources */,
 				D82E51C92484BF8100AD3D75 /* Register.swift in Sources */,
+				1B25935329DEAA9E003B00A9 /* Service.swift in Sources */,
+				AC7A266529ECFEF1003D14D1 /* EditingUser.swift in Sources */,
 				D82AF9EF249CADDA00C4E265 /* KaedeTextField.swift in Sources */,
 				0CF7F04329D88200005C2BA5 /* SalonDetailsViewController.swift in Sources */,
 				D86C54AD24B5AD8A009235EF /* PastAppointment.swift in Sources */,
