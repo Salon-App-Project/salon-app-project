@@ -30,11 +30,11 @@ Salon App offers a free 14-day trial, after which users can select a subscriptio
 - [x] User can create a new account
 - [x] User can login
 - [x] User can search for salons based on their zip code 
-- [ ] User can view the name, picture, and services offered by a salon
-- [ ] User can select a service, gender, and date/time for their appointment
-- [ ] 	User can cancel their booking and the business owner will be notified automatically
-- [ ] Business owners can set up their business information (Company Name, Address, Tax ID, Phone Number) and services offered
-- [ ] Business owners can track service revenue based on bookings, including tip
+- [x] User can view the name, picture, and services offered by a salon
+- [x] User can select a service, gender, and date/time for their appointment
+- [x] User can cancel their booking and the business owner will be notified automatically
+- [x] Business owners can set up their business information (Company Name, Address, Tax ID, Phone Number) and services offered
+- [x] Business owners can track service revenue based on bookings, including tip
 - [ ] Business owners can track expenses by date, invoice number, description, and price
 ### Optional Nice-to-have Stories
 - [ ] User can receive an email confirmation upon booking
@@ -55,10 +55,10 @@ Salon App offers a free 14-day trial, after which users can select a subscriptio
 - [x] Registration Screen
 - [x] Search Screen
 - [x] Salon List Screen
-- [ ] Salon Details Screen
-- [] Appointment Selection Screen
-- [ ] Confirmation Screen
-- [ ] Business Setup Screen
+- [x] Salon Details Screen
+- [x] Appointment Selection Screen
+- [x] Confirmation Screen
+- [x] Business Setup Screen
 - [ ] Revenue Tracking Screen
 - [ ] Expense Tracking Screen
 ## Navigation Tab Navigation (Tab to Screen)
