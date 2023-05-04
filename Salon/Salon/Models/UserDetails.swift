@@ -12,6 +12,7 @@ struct UserDetails: ParseObject {
 
     // custom properties.
     var user:User?
+    var email: String?
     var phone: String?
     var address: String?
     var city: String?

@@ -96,6 +96,7 @@ class SubCateogry: UIViewController {
         if segue.identifier == "styledetails" {
             let vc = segue.destination as! StylishDetails
             vc.selectedStyle = selectedStyle
+            vc.selectedSalon = selectedSalon
         }
     }
 }

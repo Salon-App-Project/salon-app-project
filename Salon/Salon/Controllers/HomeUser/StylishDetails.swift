@@ -20,6 +20,7 @@ class StylishDetails: UIViewController {
     
     //from segue
     var selectedStyle:Style!
+    var selectedSalon:SalonDetails!
     
     // MARK: - ViewDidLoad
     override func viewDidLoad() {
@@ -56,6 +57,7 @@ class StylishDetails: UIViewController {
         if segue.identifier == "book" {
             let vc = segue.destination as! BookAppointment
             vc.selectedStyle = selectedStyle
+            vc.selectedSalon = selectedSalon
         }
     }
     

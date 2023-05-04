@@ -12,9 +12,11 @@ struct Appointment: ParseObject {
 
     // custom properties.
     var user:User?
+    var salondetail: SalonDetails?
+    var userdetail: UserDetails?
     var style: Style?
-    var date: Date?
-    var name: String?
-    var phone: String?
-    
+    var appointmentdate: Date?
+    var customername: String?
+    var customerphone: String?
+    var status: String?
 }
