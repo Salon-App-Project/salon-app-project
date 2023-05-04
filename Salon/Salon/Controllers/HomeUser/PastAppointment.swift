@@ -1,28 +1,126 @@
 
 import UIKit
 import PopupDialog
+import ParseSwift
+import MessageUI
 
-class PastAppointment: UIViewController {
+class PastAppointment: UIViewController, MFMailComposeViewControllerDelegate {
 
     // MARK: - Outlets
-    @IBOutlet weak var PastAppointmentTableView: UITableView!
+    @IBOutlet weak var appointmentTableView: UITableView!
     
-    let arrStatus = ["Waiting","On Going","Confirmed","Confirmed","Waiting","Confirmed"]
+    private let refreshControl = UIRefreshControl()
+    
+    var clickedAppointment:Appointment!
+    
+    private var appointments = [Appointment]() {
+        didSet {
+            // Reload table view data any time the posts variable gets updated.
+            appointmentTableView.reloadData()
+        }
+    }
     
     // MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        appointmentTableView.delegate = self
+        appointmentTableView.dataSource = self
+        appointmentTableView.allowsSelection = true
+
+        appointmentTableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(onPullToRefresh), for: .valueChanged)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        loadAppointments()
+    }
+    
+    func loadAppointments() {
+        refreshControl.beginRefreshing()
+        
+        do {
+            if User.current!.usertype == "salon" {
+                let constraint: QueryConstraint = try "user" == User.current!
+                let query = SalonDetails.query(constraint)
+                
+                query.first { [weak self] result in
+                    switch result {
+                    case .success(let salondetails):
+                        do {
+                            let constraint2: QueryConstraint = try "salondetail" == salondetails
+                            
+                            let query2 = Appointment.query(constraint2)
+                                .include("user", "salondetail", "style", "salondetail.user", "userdetail", "userdetail.user")
+                                .order([.descending("appointmentdate")])
+                            
+                            query2.find { [weak self] result in
+                                switch result {
+                                case .success(let appointments):
+                                    print(appointments)
+                                    
+                                    self?.appointments = appointments
+                                    self?.refreshControl.endRefreshing()
+                                    
+                                    if appointments.count == 0 {
+                                        self?.view.makeToast("No past appointments")
+                                    }
+                                case .failure(let error):
+                                    self?.view.makeToast(error.localizedDescription)
+                                    self?.refreshControl.endRefreshing()
+                                }
+                            }
+                        }catch {
+                            self?.view.makeToast(error.localizedDescription)
+                        }
+                        
+                    case .failure(let error):
+                        self?.view.makeToast(error.localizedDescription)
+                    }
+                }
+            } else {
+                let constraint: QueryConstraint = try "user" == User.current!
+                
+                let query = Appointment.query(constraint)
+                    .include("user", "salondetail", "style", "salondetail.user", "userdetail", "userdetail.user")
+                    .order([.descending("appointmentdate")])
+                
+                query.find { [weak self] result in
+                    switch result {
+                    case .success(let appointments):
+                        print(appointments)
+                        
+                        self?.appointments = appointments
+                        self?.refreshControl.endRefreshing()
+                        
+                        if appointments.count == 0 {
+                            self?.view.makeToast("No past appointments")
+                        }
+                    case .failure(let error):
+                        self?.view.makeToast(error.localizedDescription)
+                        self?.refreshControl.endRefreshing()
+                    }
+                }
+            }
+        } catch {
+            self.view.makeToast(error.localizedDescription)
+        }
         
     }
-
+    
+    @objc private func onPullToRefresh() {
+        refreshControl.beginRefreshing()
+        loadAppointments()
+    }
 }
 
 // MARK: - Extension UITableView
 extension PastAppointment: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrStatus.count
+        return appointments.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -31,14 +129,136 @@ extension PastAppointment: UITableViewDataSource, UITableViewDelegate {
         let colorView = UIView()
         colorView.backgroundColor = UIColor.clear
         UITableViewCell.appearance().selectedBackgroundView = colorView
-        let getStatusUpdate = arrStatus[indexPath.row]
         
+        if User.current!.usertype == "salon" {
+            cell.lblAppointmentSalonName.text = appointments[indexPath.row].customername
+        } else {
+            cell.lblAppointmentSalonName.text = appointments[indexPath.row].salondetail!.user!.username
+        }
+        
+        cell.lblAppointmentStyle.text = "\(appointments[indexPath.row].style!.stylename!) - $\(appointments[indexPath.row].style!.styleprice!)"
+        
+        cell.lblStatus.text = appointments[indexPath.row].status!
+        
+        if appointments[indexPath.row].status! == "Pending" {
+            cell.lblStatus.textColor = .orange
+        } else if appointments[indexPath.row].status! == "Confirmed" {
+            cell.lblStatus.textColor = .green
+        } else if appointments[indexPath.row].status! == "Cancelled" {
+            cell.lblStatus.textColor = .red
+        }
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .short
+        dateFormatter.timeZone = .current
+        dateFormatter.locale = .current
+        let date = dateFormatter.string(from: appointments[indexPath.row].appointmentdate!)
+        cell.lblAppointmentDate.text = date
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        clickedAppointment = appointments[indexPath.row]
+        
+        if appointments[indexPath.row].status == "Pending" && User.current!.usertype == "salon" {
+            openActionSheet(usertype: "salon")
+        } else if appointments[indexPath.row].status != "Cancelled" && User.current!.usertype == "user" {
+            openActionSheet(usertype: "user")
+        }
+    }
+    
+    func openActionSheet(usertype:String) {
+        let alert = UIAlertController(title: "Choose", message: nil, preferredStyle: .actionSheet)
+        
+        if usertype == "salon" {
+            alert.addAction(UIAlertAction(title: "Confirm Appointment", style: .default) {
+                action in
+                
+                self.clickedAppointment.status = "Confirmed"
+                self.clickedAppointment.save {[weak self] result in
+                        DispatchQueue.main.async {
+                            switch result {
+                            case .success(let appointment):
+                                print("✅ Appointment Confirmed! \(appointment)")
+                            
+                                let username = self?.clickedAppointment.userdetail!.user!.username!
+                                let stylename = self?.clickedAppointment.style!.stylename!
+                                let styledate = self?.clickedAppointment.appointmentdate!
+                                
+                                self?.sendEmail(recipient: (self?.clickedAppointment.userdetail!.email!)!, message: "Hi \(username!),\n\nYour \(stylename!) appointment is confirmed for \(styledate!).\n\nThank you", subject: "Your Appointment Is Confirmed")
+                            case .failure(let error):
+                                self?.view.makeToast(error.localizedDescription)
+                            }
+                        }
+                }
+            })
+        }
+        else if usertype == "user" {
+            alert.addAction(UIAlertAction(title: "Cancel Appointment", style: .default) {
+                action in
+                
+                self.clickedAppointment.status = "Cancelled"
+                self.clickedAppointment.save {[weak self] result in
+                        DispatchQueue.main.async {
+                            switch result {
+                            case .success(let appointment):
+                                print("✅ Appointment Cancelled! \(appointment)")
+                                
+                                let username = self?.clickedAppointment.salondetail!.user!.username!
+                                let stylename = self?.clickedAppointment.style!.stylename!
+                                let styledate = self?.clickedAppointment.appointmentdate!
+                                
+                                self?.sendEmail(recipient: (self?.clickedAppointment.userdetail!.email!)!, message: "Hi \(username!),\n\nI'm sorry, but I will have to cancel my appointment for \(stylename!) at \(styledate!).\n\nI'd appreciate your understanding. Thank you", subject: "Appointment Cancellation")
+                            case .failure(let error):
+                                self?.view.makeToast(error.localizedDescription)
+                            }
+                        }
+                }
+            })
+        }
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        
+        
+        self.present(alert, animated: true)
+    }
+    
+    func sendEmail(recipient:String, message:String, subject:String) {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setToRecipients([recipient])
+            mail.setSubject(subject)
+            mail.setMessageBody(message, isHTML: false)
+            
+            present(mail, animated: true)
+        } else {
+            view.makeToast("Your device is not configured to send email")
+            
+            if User.current!.usertype == "salon" {
+                view.makeToast("Appointment Confirmed")
+            } else {
+                view.makeToast("Appointment Cancelled")
+            }
+            
+            loadAppointments()
+        }
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
+        
+        if User.current!.usertype == "salon" {
+            view.makeToast("Appointment Confirmed")
+        } else {
+            view.makeToast("Appointment Cancelled")
+        }
+        
+        loadAppointments()
     }
     
 }
@@ -48,9 +268,10 @@ class pastAppointmentCell: UITableViewCell {
     
     // MARK: - Outlets
     @IBOutlet weak var customVw: UIView!
-    @IBOutlet weak var lblAppointmentSpecialistName: UILabel!
-    @IBOutlet weak var lblAppointmentFor: UILabel!
+    @IBOutlet weak var lblAppointmentSalonName: UILabel!
+    @IBOutlet weak var lblAppointmentStyle: UILabel!
     @IBOutlet weak var lblAppointmentDate: UILabel!
+    @IBOutlet weak var lblStatus: UILabel!
     
     // MARK: - awakrFromNib
     override func awakeFromNib() {

@@ -18,6 +18,7 @@ class FindSalonViewController: UIViewController {
         }
     }
     
+    //for segue
     var clickedSalon:SalonDetails?
     
     //from segue

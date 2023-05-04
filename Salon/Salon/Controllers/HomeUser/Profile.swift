@@ -28,6 +28,7 @@ class Profile: UIViewController {
     var imageDataRequest: DataRequest?
     
     var salondetails: SalonDetails!
+    var userdetails: UserDetails!
     
     //loading indicator
     var alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
@@ -149,43 +150,83 @@ class Profile: UIViewController {
             do {
                 
                 let constraint: QueryConstraint = try "user" == user
-                let query = SalonDetails.query(constraint)
                 
-                
-                query.first { [weak self] result in
-                    switch result {
-                    case .success(let salondetails):
-                        self?.salondetails = salondetails
-                        self?.txtFldMobileNumber.text = salondetails.phone
-                        self?.txtFldAddress1.text = salondetails.address
-                        self?.txtFldCity.text = salondetails.city
-                        self?.txtFldState.text = salondetails.state
-                        self?.txtFldPincode.text = salondetails.zipcode
-                        
-                        if let imageFile = salondetails.imageFile,
-                           let imageUrl = imageFile.url {
+                if user.usertype! == "salon" {
+                    let query = SalonDetails.query(constraint)
+                    
+                    query.first { [weak self] result in
+                        switch result {
+                        case .success(let salondetails):
+                            self?.salondetails = salondetails
+                            self?.txtFldMobileNumber.text = salondetails.phone
+                            self?.txtFldAddress1.text = salondetails.address
+                            self?.txtFldCity.text = salondetails.city
+                            self?.txtFldState.text = salondetails.state
+                            self?.txtFldPincode.text = salondetails.zipcode
                             
-                            // Use AlamofireImage helper to fetch remote image from URL
-                            self?.imageDataRequest = AF.request(imageUrl).responseImage { [weak self] response in
-                                switch response.result {
-                                case .success(let image):
-                                    self?.alert.dismiss(animated: true)
-                                    // Set image view image with fetched image
-                                    self?.profileImageView.image = image
-                                    
-                                    self?.pickedImage = image
-                                case .failure(let error):
-                                    self?.alert.dismiss(animated: true)
-                                    print("❌ Error fetching image: \(error.localizedDescription)")
-                                    break
+                            if let imageFile = salondetails.imageFile,
+                               let imageUrl = imageFile.url {
+                                
+                                // Use AlamofireImage helper to fetch remote image from URL
+                                self?.imageDataRequest = AF.request(imageUrl).responseImage { [weak self] response in
+                                    switch response.result {
+                                    case .success(let image):
+                                        self?.alert.dismiss(animated: true)
+                                        // Set image view image with fetched image
+                                        self?.profileImageView.image = image
+                                        
+                                        self?.pickedImage = image
+                                    case .failure(let error):
+                                        self?.alert.dismiss(animated: true)
+                                        print("❌ Error fetching image: \(error.localizedDescription)")
+                                        break
+                                    }
                                 }
                             }
+                            
+                        case .failure(let error):
+                            self?.view.makeToast(error.localizedDescription)
                         }
-                        
-                    case .failure(let error):
-                        self?.view.makeToast(error.localizedDescription)
+                    }
+                } else {
+                    let query = UserDetails.query(constraint)
+                    
+                    query.first { [weak self] result in
+                        switch result {
+                        case .success(let userdetails):
+                            self?.userdetails = userdetails
+                            self?.txtFldMobileNumber.text = userdetails.phone
+                            self?.txtFldAddress1.text = userdetails.address
+                            self?.txtFldCity.text = userdetails.city
+                            self?.txtFldState.text = userdetails.state
+                            self?.txtFldPincode.text = userdetails.zipcode
+                            
+                            if let imageFile = userdetails.imageFile,
+                               let imageUrl = imageFile.url {
+                                
+                                // Use AlamofireImage helper to fetch remote image from URL
+                                self?.imageDataRequest = AF.request(imageUrl).responseImage { [weak self] response in
+                                    switch response.result {
+                                    case .success(let image):
+                                        self?.alert.dismiss(animated: true)
+                                        // Set image view image with fetched image
+                                        self?.profileImageView.image = image
+                                        
+                                        self?.pickedImage = image
+                                    case .failure(let error):
+                                        self?.alert.dismiss(animated: true)
+                                        print("❌ Error fetching image: \(error.localizedDescription)")
+                                        break
+                                    }
+                                }
+                            }
+                            
+                        case .failure(let error):
+                            self?.view.makeToast(error.localizedDescription)
+                        }
                     }
                 }
+                
             } catch {
                 self.view.makeToast(error.localizedDescription)
             }
@@ -230,30 +271,56 @@ class Profile: UIViewController {
 
             let imageFile = ParseFile(name: "salon.jpg", data: imageData)
 
-            
-            
-            salondetails.phone = phone
-            salondetails.address = address
-            salondetails.city = city
-            salondetails.state = state
-            salondetails.zipcode = pincode
-            
-            if changedImage {
-                salondetails.imageFile = imageFile
-            }
-            
-            salondetails.save { [weak self] result in
-                DispatchQueue.main.async {
-                    switch result {
-                    case .success(let details):
-                        print("✅ Details Saved! \(details)")
+            if User.current!.usertype == "salon" {
+                salondetails.phone = phone
+                salondetails.address = address
+                salondetails.city = city
+                salondetails.state = state
+                salondetails.zipcode = pincode
+                
+                if changedImage {
+                    salondetails.imageFile = imageFile
+                }
+                
+                salondetails.save { [weak self] result in
+                    DispatchQueue.main.async {
+                        switch result {
+                        case .success(let details):
+                            print("✅ Details Saved! \(details)")
 
-                        self?.view.makeToast("Profile Updated Successfully.")
-                        
-                        sender.isLoading = false
+                            self?.view.makeToast("Profile Updated Successfully.")
+                            
+                            sender.isLoading = false
 
-                    case .failure(let error):
-                        self?.view.makeToast(error.localizedDescription)
+                        case .failure(let error):
+                            self?.view.makeToast(error.localizedDescription)
+                        }
+                    }
+                }
+            } else {
+                userdetails.phone = phone
+                userdetails.address = address
+                userdetails.city = city
+                userdetails.state = state
+                userdetails.zipcode = pincode
+                
+                if changedImage {
+                    userdetails.imageFile = imageFile
+                }
+                
+                userdetails.save { [weak self] result in
+                    DispatchQueue.main.async {
+                        switch result {
+                        case .success(let details):
+                            print("✅ Details Saved! \(details)")
+
+                            self?.view.makeToast("Profile Updated Successfully.")
+                            
+                            sender.isLoading = false
+
+                        case .failure(let error):
+                            self?.view.makeToast(error.localizedDescription)
+                        }
                     }
                 }
             }

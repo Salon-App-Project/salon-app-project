@@ -1,6 +1,5 @@
 
 import UIKit
-import FSPagerView
 import ParseSwift
 
 class Home: UIViewController {
@@ -9,7 +8,6 @@ class Home: UIViewController {
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet var bFindSalon: UIButton!
-    
     
     //for segue
     var enteredZip = ""
@@ -84,4 +82,6 @@ class Home: UIViewController {
         actionSheetControllerIOS8.addAction(cancelActionButton)
         self.present(actionSheetControllerIOS8, animated: true, completion: nil)
     }
+    
+    @IBAction func unwindToHome(_ sender: UIStoryboardSegue) {}
 }

@@ -14,6 +14,7 @@ struct SalonDetails: ParseObject {
     var user:User?
     var phone: String?
     var address: String?
+    var email: String?
     var city: String?
     var state: String?
     var zipcode: String?
