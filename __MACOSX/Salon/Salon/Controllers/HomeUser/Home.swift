@@ -58,6 +58,27 @@ class Home: UIViewController {
         
     }
     
+    @IBAction func generateClicked(_ sender: Any) {
+        Task { @MainActor in
+            var service = Appointment()
+            let today = Date()
+            let offset  = [-2, 2]
+            let result = Int.random(in: 0...1)
+            service.user = User.current
+            service.phone = "222-444-7777"
+            service.name = "Salon Place"
+            service.date = Calendar.current.date(byAdding: .month, value: offset[result], to: today)!
+            service.create {[weak self] result in
+                switch result {
+                case .success(let detail):
+                    print("Sucessfully created object \(detail)")
+                
+                case .failure(let error):
+                    self?.view.makeToast(error.localizedDescription)
+                }
+            }
+        }
+    }
     @IBAction func bUpdateProfileClicked(_ sender: Any) {
         
     }
