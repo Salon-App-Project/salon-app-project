@@ -72,9 +72,9 @@ Salon App offers a free 14-day trial, after which users can select a subscriptio
 - [x] Registration Screen => Home
 - [x] Search Screen => Salon List Screen
 - [x] Salon List Screen => Salon Details Screen
-- [ ] Salon Details Screen => Appointment Selection Screen
-- [ ] Appointment Selection Screen => Confirmation Screen
-- [ ] Confirmation Screen => Home
+- [x] Salon Details Screen => Appointment Selection Screen
+- [x] Appointment Selection Screen => Confirmation Screen
+- [x] Confirmation Screen => Home
 ## Wireframe
 <img src="https://puu.sh/JCifc/29474ccd5f.png" width=750>
 
