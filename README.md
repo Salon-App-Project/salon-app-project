@@ -62,9 +62,9 @@ Salon App offers a free 14-day trial, after which users can select a subscriptio
 - [ ] Revenue Tracking Screen
 - [ ] Expense Tracking Screen
 ## Navigation Tab Navigation (Tab to Screen)
-- [ ] Home Screen
-- [ ] Search Screen
-- [ ] Business Setup Screen
+- [x] Home Screen
+- [x] Search Screen
+- [x] Business Setup Screen
 - [ ] Revenue Tracking Screen
 - [ ] Expense Tracking Screen
 ## Flow Navigation (Screen to Screen)
