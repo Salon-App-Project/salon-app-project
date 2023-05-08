@@ -29,7 +29,7 @@ Salon App offers a free 14-day trial, after which users can select a subscriptio
 ### Required Must-have Stories
 - [x] User can create a new account
 - [x] User can login
-- [ ] User can search for salons based on their zip code 
+- [x] User can search for salons based on their zip code 
 - [ ] User can view the name, picture, and services offered by a salon
 - [ ] User can select a service, gender, and date/time for their appointment
 - [ ] 	User can cancel their booking and the business owner will be notified automatically
@@ -39,7 +39,7 @@ Salon App offers a free 14-day trial, after which users can select a subscriptio
 ### Optional Nice-to-have Stories
 - [ ] User can receive an email confirmation upon booking
 - [ ] User can provide their gender, phone number, and email address
-- [ ] User can view the list of salons in either list mode or map mode
+- [x] User can view the list of salons in either list mode or map mode
 - [ ] User can like a photo
 - [ ] User can add a comment to a photo
 - [ ] User can tap a photo to view a more detailed photo screen with comments
@@ -53,10 +53,10 @@ Salon App offers a free 14-day trial, after which users can select a subscriptio
 ## Screen Archetypes
 - [x] Login Screen
 - [x] Registration Screen
-- [ ] Search Screen
-- [ ] Salon List Screen
+- [x] Search Screen
+- [x] Salon List Screen
 - [ ] Salon Details Screen
-- [ ] Appointment Selection Screen
+- [] Appointment Selection Screen
 - [ ] Confirmation Screen
 - [ ] Business Setup Screen
 - [ ] Revenue Tracking Screen
@@ -70,8 +70,8 @@ Salon App offers a free 14-day trial, after which users can select a subscriptio
 ## Flow Navigation (Screen to Screen)
 - [x] Login Screen => Home
 - [x] Registration Screen => Home
-- [ ] Search Screen => Salon List Screen
-- [ ] Salon List Screen => Salon Details Screen
+- [x] Search Screen => Salon List Screen
+- [x] Salon List Screen => Salon Details Screen
 - [ ] Salon Details Screen => Appointment Selection Screen
 - [ ] Appointment Selection Screen => Confirmation Screen
 - [ ] Confirmation Screen => Home
