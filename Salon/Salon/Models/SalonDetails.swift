@@ -19,5 +19,4 @@ struct SalonDetails: ParseObject {
     var state: String?
     var zipcode: String?
     var imageFile: ParseFile?
-    var salestotal:Double?
 }
