@@ -31,11 +31,10 @@ class BookAppointment: UIViewController {
             var salestotal = selectedStyle.styleprice
             var creditsafterpay = usercredits! - Double(salestotal!)!
             
-            self.openAlert(setMsg: "Booked Appointment Successfully And Paid")
-            print(creditsafterpay)
+            self.openAlert(setMsg: "Booked Appointment Successfully and Paid and have",creditsafterpay,"left")
         }
     }
-    func openAlert(setMsg: String) {
+    func openAlert(setMsg: String,_: Double,_: String) {
         let actionSheetControllerIOS8: UIAlertController = UIAlertController(title: "Success", message: setMsg, preferredStyle: .alert)
         let saveActionButton = UIAlertAction(title: "Ok", style: .default)
         { _ in
