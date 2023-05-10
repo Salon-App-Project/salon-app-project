@@ -60,6 +60,23 @@ class Home: UIViewController {
     @IBAction func bUpdateProfileClicked(_ sender: Any) {
         self.performSegue(withIdentifier: "editprofile", sender: nil)
     }
+    @IBAction func bGenerateClicked(_ sender: Any) {
+        var user = User.current
+        user?.usercredits! += 100.00
+        
+        user?.save { [weak self] result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let details):
+                    print("✅ Details Saved! \(details)")
+                    
+                case .failure(let error):
+                    self?.view.makeToast(error.localizedDescription)
+                }
+            }
+        }
+        self.view.makeToast("100.00 credits added.")
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "findsalon" {

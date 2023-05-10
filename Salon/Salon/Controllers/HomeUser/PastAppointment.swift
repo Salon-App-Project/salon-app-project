@@ -216,14 +216,52 @@ extension PastAppointment: UITableViewDataSource, UITableViewDelegate {
         if usertype == "salon" {
             alert.addAction(UIAlertAction(title: "Confirm Appointment", style: .default) {
                 action in
-                
+                var credits = self.clickedAppointment.user?.usercredits
+                var salonBalance = self.clickedAppointment.salondetail?.salestotal
+                var userBalance = self.clickedAppointment.userdetail?.servicetotal
+                let price = Double((self.clickedAppointment.style?.styleprice!)!)
+                guard credits! > price! else {
+                    self.clickedAppointment.status = "Cancelled"
+                    self.clickedAppointment.save {[weak self] result in
+                            DispatchQueue.main.async {
+                                switch result {
+                                case .success(let appointment):
+                                    print("✅ Appointment Cancelled! \(appointment)")
+                                    
+                                    let username = self?.clickedAppointment.userdetail!.user!.username!
+                                    let stylename = self?.clickedAppointment.style!.stylename!
+                                    let styledate = self?.clickedAppointment.appointmentdate!
+                                    
+                                    self?.sendEmail(recipient: (self?.clickedAppointment.userdetail!.email!)!, message: "Hi \(username!),\n\nYour \(stylename!) appointment is cancelled for \(styledate!) due to insufficient funds.\n\nThank you", subject: "Your Appointment Is cancelled")
+                                case .failure(let error):
+                                    self?.view.makeToast(error.localizedDescription)
+                                }
+                            }
+                    }
+                    self.view.makeToast("Customer has insufficient funds. Cancelling Appointment.")
+                    return
+                }
                 self.clickedAppointment.status = "Confirmed"
+                userBalance! += price!
+                salonBalance! += price!
+                credits! -= price!
+                self.clickedAppointment.user!.save{[weak self] result in
+                    switch result {
+                    case .success(let user):
+                        print("User Saved: \(user)")
+                    
+                    case .failure(let error):
+                        self?.view.makeToast(error.localizedDescription)
+                    
+                        
+                    }
+                }
                 self.clickedAppointment.save {[weak self] result in
                         DispatchQueue.main.async {
                             switch result {
                             case .success(let appointment):
                                 print("✅ Appointment Confirmed! \(appointment)")
-                            
+                                
                                 let username = self?.clickedAppointment.userdetail!.user!.username!
                                 let stylename = self?.clickedAppointment.style!.stylename!
                                 let styledate = self?.clickedAppointment.appointmentdate!

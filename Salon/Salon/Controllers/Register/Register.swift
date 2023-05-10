@@ -69,7 +69,7 @@ class Register: UIViewController, UITextFieldDelegate {
                 newUser.email = email
                 newUser.password = password
                 newUser.usertype = userType
-
+                newUser.usercredits = 0
                 //newUser.phone = phone
                 //newUser.imageFile = imageFile
 
@@ -93,6 +93,7 @@ class Register: UIViewController, UITextFieldDelegate {
                                     salondetails.imageFile = imageFile
                                     salondetails.user = user
                                     salondetails.email = email
+                                    salondetails.salestotal = 0
                                     
                                     salondetails.save { [weak self] result in
                                         DispatchQueue.main.async {
@@ -125,7 +126,7 @@ class Register: UIViewController, UITextFieldDelegate {
                                     userdetails.imageFile = imageFile
                                     userdetails.user = user
                                     userdetails.email = email
-                                    
+                                    userdetails.servicetotal = 0
                                     userdetails.save { [weak self] result in
                                         DispatchQueue.main.async {
                                             switch result {
