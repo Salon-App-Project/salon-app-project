@@ -15,6 +15,7 @@ class BookAppointment: UIViewController {
     
     //from segue
     var selectedStyle:Style!
+    var user:User!
     
     // MARK: - Actions
     @IBAction func bookAppointment(_ sender: LGButton) {
@@ -25,10 +26,15 @@ class BookAppointment: UIViewController {
             self.view.makeToast("Please enter Name and Mobile Number")
         }
         else {
-            self.openAlert(setMsg: "Booked Appointment Successfully")
+            var usercredits = user.usercredits
+            usercredits = 200.00
+            var salestotal = selectedStyle.styleprice
+            var creditsafterpay = usercredits! - Double(salestotal!)!
+            
+            self.openAlert(setMsg: "Booked Appointment Successfully And Paid")
+            print(creditsafterpay)
         }
     }
-    
     func openAlert(setMsg: String) {
         let actionSheetControllerIOS8: UIAlertController = UIAlertController(title: "Success", message: setMsg, preferredStyle: .alert)
         let saveActionButton = UIAlertAction(title: "Ok", style: .default)
@@ -52,6 +58,7 @@ class BookAppointment: UIViewController {
         
         lblStyleName.text = selectedStyle.stylename
         lblStylePrice.text = "$\(selectedStyle.styleprice!)"
+        
     }
     
     @objc func dateSelected() {

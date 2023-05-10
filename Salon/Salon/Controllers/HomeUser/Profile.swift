@@ -27,7 +27,7 @@ class Profile: UIViewController {
     
     var imageDataRequest: DataRequest?
     
-    var salondetails: SalonDetails!
+    var userdetails: UserDetails!
     
     //loading indicator
     var alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
@@ -148,21 +148,21 @@ class Profile: UIViewController {
             
             do {
                 
-                let constraint: QueryConstraint = try "user" == user
-                let query = SalonDetails.query(constraint)
+                let constraint: QueryConstraint = try user.id == user
+                let query = UserDetails.query(constraint)
                 
                 
                 query.first { [weak self] result in
                     switch result {
-                    case .success(let salondetails):
-                        self?.salondetails = salondetails
-                        self?.txtFldMobileNumber.text = salondetails.phone
-                        self?.txtFldAddress1.text = salondetails.address
-                        self?.txtFldCity.text = salondetails.city
-                        self?.txtFldState.text = salondetails.state
-                        self?.txtFldPincode.text = salondetails.zipcode
+                    case .success(let userdetails):
+                        self?.userdetails = userdetails
+                        self?.txtFldMobileNumber.text = userdetails.phone
+                        self?.txtFldAddress1.text = userdetails.address
+                        self?.txtFldCity.text = userdetails.city
+                        self?.txtFldState.text = userdetails.state
+                        self?.txtFldPincode.text = userdetails.zipcode
                         
-                        if let imageFile = salondetails.imageFile,
+                        if let imageFile = userdetails.imageFile,
                            let imageUrl = imageFile.url {
                             
                             // Use AlamofireImage helper to fetch remote image from URL
@@ -232,17 +232,17 @@ class Profile: UIViewController {
 
             
             
-            salondetails.phone = phone
-            salondetails.address = address
-            salondetails.city = city
-            salondetails.state = state
-            salondetails.zipcode = pincode
+            userdetails.phone = phone
+            userdetails.address = address
+            userdetails.city = city
+            userdetails.state = state
+            userdetails.zipcode = pincode
             
             if changedImage {
-                salondetails.imageFile = imageFile
+                userdetails.imageFile = imageFile
             }
             
-            salondetails.save { [weak self] result in
+                 userdetails.save { [weak self] result in
                 DispatchQueue.main.async {
                     switch result {
                     case .success(let details):

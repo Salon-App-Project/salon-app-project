@@ -1598,7 +1598,7 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="6"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="BOOK APPOINTMENT"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="BOOK APPOINTMENT/Pay"/>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
                                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
@@ -2228,17 +2228,29 @@
         <designable name="48L-ll-860">
             <size key="intrinsicContentSize" width="138.33333333333334" height="25"/>
         </designable>
+        <designable name="A3K-aD-M0g">
+            <size key="intrinsicContentSize" width="10" height="10"/>
+        </designable>
         <designable name="AnJ-KM-cUB">
             <size key="intrinsicContentSize" width="85" height="25"/>
         </designable>
+        <designable name="La1-F6-Uct">
+            <size key="intrinsicContentSize" width="10" height="10"/>
+        </designable>
         <designable name="Q2w-bx-ppH">
             <size key="intrinsicContentSize" width="79" height="24"/>
+        </designable>
+        <designable name="QuC-iR-oNj">
+            <size key="intrinsicContentSize" width="10" height="10"/>
         </designable>
         <designable name="SM7-yo-yWo">
             <size key="intrinsicContentSize" width="85" height="25"/>
         </designable>
         <designable name="SOb-Sd-UuV">
             <size key="intrinsicContentSize" width="49.333333333333336" height="25"/>
+        </designable>
+        <designable name="TAx-AV-Cik">
+            <size key="intrinsicContentSize" width="10" height="10"/>
         </designable>
         <designable name="fgM-JB-bHu">
             <size key="intrinsicContentSize" width="45.333333333333336" height="25"/>
@@ -2252,8 +2264,20 @@
         <designable name="mKC-0M-NJa">
             <size key="intrinsicContentSize" width="79" height="24"/>
         </designable>
+        <designable name="mQR-FM-Aip">
+            <size key="intrinsicContentSize" width="10" height="10"/>
+        </designable>
         <designable name="mYk-Zv-Qv2">
             <size key="intrinsicContentSize" width="93.333333333333329" height="25"/>
+        </designable>
+        <designable name="o5o-w5-hpe">
+            <size key="intrinsicContentSize" width="10" height="10"/>
+        </designable>
+        <designable name="sVJ-Ir-Re5">
+            <size key="intrinsicContentSize" width="10" height="10"/>
+        </designable>
+        <designable name="vM4-Dp-gTp">
+            <size key="intrinsicContentSize" width="10" height="10"/>
         </designable>
         <designable name="znc-fd-K5q">
             <size key="intrinsicContentSize" width="128.66666666666666" height="25"/>
