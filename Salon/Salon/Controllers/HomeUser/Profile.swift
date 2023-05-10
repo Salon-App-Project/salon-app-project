@@ -291,7 +291,7 @@ class Profile: UIViewController {
                             self?.view.makeToast("Profile Updated Successfully.")
                             
                             sender.isLoading = false
-
+                            self?.performSegue(withIdentifier: "backSalonHome", sender: nil)
                         case .failure(let error):
                             self?.view.makeToast(error.localizedDescription)
                         }
@@ -317,6 +317,7 @@ class Profile: UIViewController {
                             self?.view.makeToast("Profile Updated Successfully.")
                             
                             sender.isLoading = false
+                            self?.performSegue(withIdentifier: "backHome", sender: nil)
 
                         case .failure(let error):
                             self?.view.makeToast(error.localizedDescription)

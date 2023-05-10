@@ -10,11 +10,13 @@ class Register: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var txtFldEmail: TextFieldEffects!
     @IBOutlet weak var txtFldName: TextFieldEffects!
     @IBOutlet weak var txtFldPassword: TextFieldEffects!
+    @IBOutlet weak var txtFldPassVerify: TextFieldEffects!
     @IBOutlet weak var txtFldMobileNumber: TextFieldEffects!
     @IBOutlet weak var btnSignUp: LGButton!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var selectImage: UIButton!
     
+
     var imagePicker = UIImagePickerController()
     var pickedImage:UIImage?
     
@@ -39,6 +41,12 @@ class Register: UIViewController, UITextFieldDelegate {
             else if pickedImage == nil {
                 self.view.makeToast("Please select Image")
             }
+        else if txtFldPassword.text != txtFldPassVerify.text {
+            self.view.makeToast("Passwords must match")
+            txtFldPassVerify.backgroundColor = UIColor.red
+            txtFldPassVerify.alpha = 0.2
+            CommonClass().cornerRadiusTextFld(setFld: txtFldPassVerify)
+        }
             else {
                 
                 sender.isLoading = true

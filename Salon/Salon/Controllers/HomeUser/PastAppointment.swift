@@ -3,7 +3,10 @@ import UIKit
 import PopupDialog
 import ParseSwift
 import MessageUI
-
+struct organizedAppointments{
+var statusName: String?
+var apps: [Appointment]
+}
 class PastAppointment: UIViewController, MFMailComposeViewControllerDelegate {
 
     // MARK: - Outlets
@@ -16,6 +19,11 @@ class PastAppointment: UIViewController, MFMailComposeViewControllerDelegate {
     private var appointments = [Appointment]() {
         didSet {
             // Reload table view data any time the posts variable gets updated.
+            appointmentTableView.reloadData()
+        }
+    }
+    var sections = [organizedAppointments]() {
+        didSet {
             appointmentTableView.reloadData()
         }
     }
@@ -68,6 +76,9 @@ class PastAppointment: UIViewController, MFMailComposeViewControllerDelegate {
                                     if appointments.count == 0 {
                                         self?.view.makeToast("No past appointments")
                                     }
+                                    else {
+                                        self?.sectionsCreate()
+                                    }
                                 case .failure(let error):
                                     self?.view.makeToast(error.localizedDescription)
                                     self?.refreshControl.endRefreshing()
@@ -99,6 +110,9 @@ class PastAppointment: UIViewController, MFMailComposeViewControllerDelegate {
                         if appointments.count == 0 {
                             self?.view.makeToast("No past appointments")
                         }
+                        else {
+                            self?.sectionsCreate()
+                        }
                     case .failure(let error):
                         self?.view.makeToast(error.localizedDescription)
                         self?.refreshControl.endRefreshing()
@@ -115,36 +129,60 @@ class PastAppointment: UIViewController, MFMailComposeViewControllerDelegate {
         refreshControl.beginRefreshing()
         loadAppointments()
     }
+    func sectionsCreate() {
+        let groups = Dictionary(grouping: self.appointments) { (appointment) in
+            return appointment.status
+        }
+        self.sections = groups.map(organizedAppointments.init(statusName:apps:))
+        self.sections.sort{ (lhs, rhs) in
+            if (rhs.statusName == "Pending") {
+                return false
+            } else if (lhs.statusName == "Cancelled") {
+                return false
+            } else {
+                return true
+            }
+        }
+    }
 }
+
 
 // MARK: - Extension UITableView
 extension PastAppointment: UITableViewDataSource, UITableViewDelegate {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return self.sections.count
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return appointments.count
+        let currentSection = self.sections[section]
+        return currentSection.apps.count
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let currentSection = self.sections[section]
+        return currentSection.statusName
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "pastAppointmentAnimatedCell", for: indexPath) as! pastAppointmentCell
-        
+        let currentSection = sections[indexPath.section]
         let colorView = UIView()
         colorView.backgroundColor = UIColor.clear
         UITableViewCell.appearance().selectedBackgroundView = colorView
         
         if User.current!.usertype == "salon" {
-            cell.lblAppointmentSalonName.text = appointments[indexPath.row].customername
+            cell.lblAppointmentSalonName.text = currentSection.apps[indexPath.row].customername
         } else {
-            cell.lblAppointmentSalonName.text = appointments[indexPath.row].salondetail!.user!.username
+            cell.lblAppointmentSalonName.text = currentSection.apps[indexPath.row].salondetail!.user!.username
         }
         
-        cell.lblAppointmentStyle.text = "\(appointments[indexPath.row].style!.stylename!) - $\(appointments[indexPath.row].style!.styleprice!)"
+        cell.lblAppointmentStyle.text = "\(currentSection.apps[indexPath.row].style!.stylename!) - $\(currentSection.apps[indexPath.row].style!.styleprice!)"
         
-        cell.lblStatus.text = appointments[indexPath.row].status!
+        cell.lblStatus.text = currentSection.apps[indexPath.row].status!
         
-        if appointments[indexPath.row].status! == "Pending" {
+        if currentSection.apps[indexPath.row].status! == "Pending" {
             cell.lblStatus.textColor = .orange
-        } else if appointments[indexPath.row].status! == "Confirmed" {
+        } else if currentSection.apps[indexPath.row].status! == "Confirmed" {
             cell.lblStatus.textColor = .green
-        } else if appointments[indexPath.row].status! == "Cancelled" {
+        } else if currentSection.apps[indexPath.row].status! == "Cancelled" {
             cell.lblStatus.textColor = .red
         }
         
@@ -153,7 +191,7 @@ extension PastAppointment: UITableViewDataSource, UITableViewDelegate {
         dateFormatter.timeStyle = .short
         dateFormatter.timeZone = .current
         dateFormatter.locale = .current
-        let date = dateFormatter.string(from: appointments[indexPath.row].appointmentdate!)
+        let date = dateFormatter.string(from: currentSection.apps[indexPath.row].appointmentdate!)
         cell.lblAppointmentDate.text = date
         
         return cell
@@ -162,7 +200,8 @@ extension PastAppointment: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        clickedAppointment = appointments[indexPath.row]
+        let currentSection = sections[indexPath.section]
+        clickedAppointment = currentSection.apps[indexPath.row]
         
         if appointments[indexPath.row].status == "Pending" && User.current!.usertype == "salon" {
             openActionSheet(usertype: "salon")
