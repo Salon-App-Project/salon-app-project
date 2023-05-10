@@ -159,3 +159,5 @@ expense_date: date
 created_at: datetime
 ## Schema 
 ## Networking
+
+## Salon App Video : https://youtu.be/eaZj0TnrnNI
