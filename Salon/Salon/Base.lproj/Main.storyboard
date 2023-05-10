@@ -410,8 +410,31 @@
                                             <outlet property="delegate" destination="SdV-1F-hCs" id="h8d-zH-xci"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="znc-fd-K5q" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Verify Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sjq-fV-EiA" userLabel="Txt Fld Pass Verify" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
                                         <rect key="frame" x="42" y="401" width="330" height="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="SdV-1F-hCs" id="qW4-Zf-cyq"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="znc-fd-K5q" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="461" width="330" height="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
@@ -488,32 +511,41 @@
                                     <constraint firstAttribute="trailing" secondItem="sVJ-Ir-Re5" secondAttribute="trailing" constant="88" id="25b-l2-uD3"/>
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="leading" secondItem="YjF-d1-xfL" secondAttribute="leading" id="3za-kq-hP1"/>
                                     <constraint firstAttribute="width" constant="414" id="6kj-ao-Iah"/>
+                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="trailing" secondItem="znc-fd-K5q" secondAttribute="trailing" id="71x-Rd-dWf"/>
+                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="trailing" secondItem="mKC-0M-NJa" secondAttribute="trailing" id="7fO-fW-NCE"/>
+                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="top" secondItem="mKC-0M-NJa" secondAttribute="bottom" constant="20" id="7wu-Ve-CjC"/>
+                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="leading" secondItem="mKC-0M-NJa" secondAttribute="leading" id="7yB-Pg-9dQ"/>
                                     <constraint firstItem="YjF-d1-xfL" firstAttribute="centerX" secondItem="d8K-8v-3sD" secondAttribute="centerX" id="8uc-Bd-35Z"/>
                                     <constraint firstItem="SOb-Sd-UuV" firstAttribute="leading" secondItem="fgM-JB-bHu" secondAttribute="leading" id="92B-18-nP1"/>
                                     <constraint firstItem="SOb-Sd-UuV" firstAttribute="top" secondItem="fgM-JB-bHu" secondAttribute="bottom" constant="20" id="Dle-5s-SSi"/>
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="width" secondItem="YjF-d1-xfL" secondAttribute="width" id="G6T-Xo-uyz"/>
                                     <constraint firstItem="mKC-0M-NJa" firstAttribute="width" secondItem="SOb-Sd-UuV" secondAttribute="width" id="Gas-bK-qND"/>
+                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="height" secondItem="mKC-0M-NJa" secondAttribute="height" id="HDt-3C-iHN"/>
                                     <constraint firstItem="znc-fd-K5q" firstAttribute="leading" secondItem="mKC-0M-NJa" secondAttribute="leading" id="Hy1-RV-Imw"/>
                                     <constraint firstItem="mKC-0M-NJa" firstAttribute="trailing" secondItem="SOb-Sd-UuV" secondAttribute="trailing" id="MiO-Ue-bI1"/>
+                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="height" secondItem="znc-fd-K5q" secondAttribute="height" id="Ogk-op-OhG"/>
                                     <constraint firstAttribute="bottom" secondItem="sVJ-Ir-Re5" secondAttribute="bottom" constant="8" id="PVW-HX-z9M"/>
                                     <constraint firstItem="fgM-JB-bHu" firstAttribute="top" secondItem="YjF-d1-xfL" secondAttribute="bottom" constant="101" id="Qkt-hc-osB"/>
                                     <constraint firstItem="SOb-Sd-UuV" firstAttribute="height" secondItem="fgM-JB-bHu" secondAttribute="height" id="RC6-z9-p9x"/>
                                     <constraint firstItem="YjF-d1-xfL" firstAttribute="top" secondItem="d8K-8v-3sD" secondAttribute="top" constant="30" id="S5A-Hg-JPo"/>
+                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="width" secondItem="znc-fd-K5q" secondAttribute="width" id="Skr-iu-4ag"/>
                                     <constraint firstItem="znc-fd-K5q" firstAttribute="height" secondItem="mKC-0M-NJa" secondAttribute="height" id="T0g-4Z-869"/>
                                     <constraint firstAttribute="trailing" secondItem="fgM-JB-bHu" secondAttribute="trailing" constant="42" id="UW0-zs-R0k"/>
                                     <constraint firstItem="mKC-0M-NJa" firstAttribute="leading" secondItem="SOb-Sd-UuV" secondAttribute="leading" id="X2r-jB-3do"/>
                                     <constraint firstItem="fgM-JB-bHu" firstAttribute="leading" secondItem="d8K-8v-3sD" secondAttribute="leading" constant="42" id="b6Q-c4-QtS"/>
+                                    <constraint firstItem="mKC-0M-NJa" firstAttribute="top" secondItem="SOb-Sd-UuV" secondAttribute="bottom" constant="20" id="bg1-wR-5lq"/>
+                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="leading" secondItem="znc-fd-K5q" secondAttribute="leading" id="fxR-uZ-0b0"/>
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="trailing" secondItem="YjF-d1-xfL" secondAttribute="trailing" id="ggl-JX-gVO"/>
-                                    <constraint firstItem="znc-fd-K5q" firstAttribute="top" secondItem="mKC-0M-NJa" secondAttribute="bottom" constant="20" id="hPE-4e-efF"/>
                                     <constraint firstItem="znc-fd-K5q" firstAttribute="width" secondItem="mKC-0M-NJa" secondAttribute="width" id="mCC-ni-Xbv"/>
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="bottom" secondItem="YjF-d1-xfL" secondAttribute="bottom" id="nKz-f3-QFy"/>
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="top" secondItem="YjF-d1-xfL" secondAttribute="top" id="o9o-Wv-6Pt"/>
                                     <constraint firstItem="SOb-Sd-UuV" firstAttribute="width" secondItem="fgM-JB-bHu" secondAttribute="width" id="oJu-9n-qS4"/>
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="height" secondItem="YjF-d1-xfL" secondAttribute="height" id="plu-NP-4wa"/>
                                     <constraint firstAttribute="height" constant="661" id="qpj-av-ayK"/>
-                                    <constraint firstItem="mKC-0M-NJa" firstAttribute="top" secondItem="SOb-Sd-UuV" secondAttribute="bottom" constant="20" id="rgY-98-XCw"/>
                                     <constraint firstItem="mKC-0M-NJa" firstAttribute="height" secondItem="SOb-Sd-UuV" secondAttribute="height" id="s7N-nA-qo3"/>
                                     <constraint firstItem="znc-fd-K5q" firstAttribute="trailing" secondItem="mKC-0M-NJa" secondAttribute="trailing" id="urU-pd-RY9"/>
+                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="width" secondItem="mKC-0M-NJa" secondAttribute="width" id="wZX-qi-Mql"/>
+                                    <constraint firstItem="znc-fd-K5q" firstAttribute="top" secondItem="Sjq-fV-EiA" secondAttribute="bottom" constant="20" id="xCP-6a-EoG"/>
                                     <constraint firstItem="sVJ-Ir-Re5" firstAttribute="leading" secondItem="d8K-8v-3sD" secondAttribute="leading" constant="88" id="yCa-sY-DrB"/>
                                     <constraint firstItem="SOb-Sd-UuV" firstAttribute="trailing" secondItem="fgM-JB-bHu" secondAttribute="trailing" id="yg6-Oy-Hfq"/>
                                 </constraints>
@@ -538,6 +570,7 @@
                         <outlet property="txtFldEmail" destination="fgM-JB-bHu" id="l7A-Cg-ih9"/>
                         <outlet property="txtFldMobileNumber" destination="znc-fd-K5q" id="GuY-CV-P6Q"/>
                         <outlet property="txtFldName" destination="SOb-Sd-UuV" id="u3G-cb-OcX"/>
+                        <outlet property="txtFldPassVerify" destination="Sjq-fV-EiA" id="cry-be-fbm"/>
                         <outlet property="txtFldPassword" destination="mKC-0M-NJa" id="9PH-tz-U1O"/>
                     </connections>
                 </viewController>
@@ -1752,7 +1785,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 July 2020  11:00AM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDY-Rr-zmN">
-                                                            <rect key="frame" x="8" y="71" width="382" height="18"/>
+                                                            <rect key="frame" x="8" y="71" width="382" height="15.333333333333329"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="382" id="Vbz-Bk-ent"/>
                                                             </constraints>
@@ -1761,7 +1794,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 July 2020  11:00AM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgl-yu-VYh">
-                                                            <rect key="frame" x="8" y="97" width="382" height="18"/>
+                                                            <rect key="frame" x="8" y="94.333333333333329" width="382" height="15.333333333333329"/>
                                                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                                                             <color key="textColor" red="0.54739093780000003" green="0.2248520255" blue="0.2008312941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -2091,9 +2124,12 @@
                         <outlet property="txtFldName" destination="OdT-PS-DgY" id="VvE-MG-3LF"/>
                         <outlet property="txtFldPincode" destination="FA2-Aw-zie" id="nZz-az-2MC"/>
                         <outlet property="txtFldState" destination="lZe-bM-kJ1" id="uci-0X-kmf"/>
+                        <segue destination="mqB-Fj-GxM" kind="unwind" identifier="backHome" unwindAction="unwindToHome:" id="6G1-kd-Hpi"/>
+                        <segue destination="mqB-Fj-GxM" kind="unwind" identifier="backSalonHome" unwindAction="unwindToSalonHome:" id="zCx-Dq-H4K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ue-Z4-EQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="mqB-Fj-GxM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1442" y="-731"/>
         </scene>
@@ -2237,17 +2273,32 @@
         <designable name="48L-ll-860">
             <size key="intrinsicContentSize" width="138.33333333333334" height="25"/>
         </designable>
+        <designable name="A3K-aD-M0g">
+            <size key="intrinsicContentSize" width="10" height="10"/>
+        </designable>
         <designable name="AnJ-KM-cUB">
             <size key="intrinsicContentSize" width="85" height="25"/>
         </designable>
+        <designable name="La1-F6-Uct">
+            <size key="intrinsicContentSize" width="10" height="10"/>
+        </designable>
         <designable name="Q2w-bx-ppH">
             <size key="intrinsicContentSize" width="79" height="24"/>
+        </designable>
+        <designable name="QuC-iR-oNj">
+            <size key="intrinsicContentSize" width="10" height="10"/>
         </designable>
         <designable name="SM7-yo-yWo">
             <size key="intrinsicContentSize" width="85" height="25"/>
         </designable>
         <designable name="SOb-Sd-UuV">
             <size key="intrinsicContentSize" width="49.333333333333336" height="25"/>
+        </designable>
+        <designable name="Sjq-fV-EiA">
+            <size key="intrinsicContentSize" width="130.66666666666666" height="24"/>
+        </designable>
+        <designable name="TAx-AV-Cik">
+            <size key="intrinsicContentSize" width="10" height="10"/>
         </designable>
         <designable name="fgM-JB-bHu">
             <size key="intrinsicContentSize" width="45.333333333333336" height="25"/>
@@ -2261,8 +2312,20 @@
         <designable name="mKC-0M-NJa">
             <size key="intrinsicContentSize" width="79" height="24"/>
         </designable>
+        <designable name="mQR-FM-Aip">
+            <size key="intrinsicContentSize" width="10" height="10"/>
+        </designable>
         <designable name="mYk-Zv-Qv2">
             <size key="intrinsicContentSize" width="93.333333333333329" height="25"/>
+        </designable>
+        <designable name="o5o-w5-hpe">
+            <size key="intrinsicContentSize" width="10" height="10"/>
+        </designable>
+        <designable name="sVJ-Ir-Re5">
+            <size key="intrinsicContentSize" width="10" height="10"/>
+        </designable>
+        <designable name="vM4-Dp-gTp">
+            <size key="intrinsicContentSize" width="10" height="10"/>
         </designable>
         <designable name="znc-fd-K5q">
             <size key="intrinsicContentSize" width="128.66666666666666" height="25"/>
@@ -2271,7 +2334,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="T1J-Yw-f6Z"/>
         <segue reference="aNZ-4c-qFV"/>
-        <segue reference="Ozu-Mf-l6q"/>
+        <segue reference="9XU-vH-hFH"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Edit Profile" width="40" height="40"/>

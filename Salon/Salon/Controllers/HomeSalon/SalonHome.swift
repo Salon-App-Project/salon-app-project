@@ -40,5 +40,5 @@ class SalonHome: UIViewController {
         actionSheetControllerIOS8.addAction(cancelActionButton)
         self.present(actionSheetControllerIOS8, animated: true, completion: nil)
     }
-    
+    @IBAction func unwindToSalonHome(_ sender: UIStoryboardSegue){}
 }
