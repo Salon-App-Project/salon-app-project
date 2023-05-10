@@ -216,6 +216,8 @@ extension PastAppointment: UITableViewDataSource, UITableViewDelegate {
         if usertype == "salon" {
             alert.addAction(UIAlertAction(title: "Confirm Appointment", style: .default) {
                 action in
+                var salondetails: SalonDetails!
+                var userdetails: UserDetails!
                 var credits = self.clickedAppointment.user?.usercredits
                 var salonBalance = self.clickedAppointment.salondetail?.salestotal
                 var userBalance = self.clickedAppointment.userdetail?.servicetotal
@@ -242,10 +244,10 @@ extension PastAppointment: UITableViewDataSource, UITableViewDelegate {
                     return
                 }
                 self.clickedAppointment.status = "Confirmed"
-                userBalance! += price!
-                salonBalance! += price!
-                credits! -= price!
-                self.clickedAppointment.user!.save{[weak self] result in
+                userdetails.servicetotal = userBalance! + price!
+                salondetails.salestotal = salonBalance! + price!
+                /*User?.usercredits = credits! - price!
+                User?.current.save{[weak self] result in
                     switch result {
                     case .success(let user):
                         print("User Saved: \(user)")
@@ -255,7 +257,34 @@ extension PastAppointment: UITableViewDataSource, UITableViewDelegate {
                     
                         
                     }
+                }*/
+                userdetails.save{[weak self] result in
+                    DispatchQueue.main.async {
+                        switch result {
+                        case .success(let user):
+                            print("User Saved: \(user)")
+                            
+                        case .failure(let error):
+                            self?.view.makeToast(error.localizedDescription)
+                            
+                            
+                        }
+                    }
                 }
+                    salondetails.save{[weak self] result in
+                        DispatchQueue.main.async {
+                            switch result {
+                                
+                            case .success(let user):
+                                print("User Saved: \(user)")
+                                
+                            case .failure(let error):
+                                self?.view.makeToast(error.localizedDescription)
+                                
+                                
+                            }
+                        }
+                    }
                 self.clickedAppointment.save {[weak self] result in
                         DispatchQueue.main.async {
                             switch result {

@@ -36,6 +36,24 @@ class SalonHome: UIViewController {
 
                     
     }*/
+    func loadIncome() {
+        do {
+            let constraint: QueryConstraint = try "user" == User.current
+            let query = SalonDetails.query(constraint)
+            
+            query.first { [weak self] result in
+                switch result {
+                case .success(let userdetails):
+                    self?.labelIncome.text = String(userdetails.salestotal!)
+                    
+                case .failure(let error):
+                    self?.view.makeToast(error.localizedDescription)
+                }
+            }
+        } catch {
+            self.view.makeToast(error.localizedDescription)
+        }
+    }
     @IBAction func bAppointmentsClicked(_ sender: Any) {
         self.performSegue(withIdentifier: "past", sender: nil)
     }
