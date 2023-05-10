@@ -216,7 +216,7 @@ extension PastAppointment: UITableViewDataSource, UITableViewDelegate {
         if usertype == "salon" {
             alert.addAction(UIAlertAction(title: "Confirm Appointment", style: .default) {
                 action in
-                var salondetails: SalonDetails!
+                /*var salondetails: SalonDetails!
                 var userdetails: UserDetails!
                 var credits = self.clickedAppointment.user?.usercredits
                 var salonBalance = self.clickedAppointment.salondetail?.salestotal
@@ -243,10 +243,12 @@ extension PastAppointment: UITableViewDataSource, UITableViewDelegate {
                     self.view.makeToast("Customer has insufficient funds. Cancelling Appointment.")
                     return
                 }
+                 */
                 self.clickedAppointment.status = "Confirmed"
+                /*
                 userdetails.servicetotal = userBalance! + price!
                 salondetails.salestotal = salonBalance! + price!
-                /*User?.usercredits = credits! - price!
+                User?.usercredits = credits! - price!
                 User?.current.save{[weak self] result in
                     switch result {
                     case .success(let user):
@@ -257,7 +259,7 @@ extension PastAppointment: UITableViewDataSource, UITableViewDelegate {
                     
                         
                     }
-                }*/
+                }
                 userdetails.save{[weak self] result in
                     DispatchQueue.main.async {
                         switch result {
@@ -284,7 +286,7 @@ extension PastAppointment: UITableViewDataSource, UITableViewDelegate {
                                 
                             }
                         }
-                    }
+                    }*/
                 self.clickedAppointment.save {[weak self] result in
                         DispatchQueue.main.async {
                             switch result {

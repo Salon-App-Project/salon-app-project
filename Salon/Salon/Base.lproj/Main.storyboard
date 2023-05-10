@@ -682,15 +682,6 @@
                                     <action selector="bUpdateProfileClicked:" destination="mli-ge-DHs" eventType="touchUpInside" id="CGj-VQ-BOI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VG8-WT-H4E">
-                                <rect key="frame" x="72" y="656" width="270" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Generate 100 Credits" image="Promo"/>
-                                <connections>
-                                    <action selector="bGenerateClicked:" destination="mli-ge-DHs" eventType="touchUpInside" id="x6f-jK-RwF"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -700,13 +691,11 @@
                             <constraint firstAttribute="trailing" secondItem="PN4-lz-WSY" secondAttribute="trailing" id="HO9-Qq-Zap"/>
                             <constraint firstItem="b5Z-0F-Dnu" firstAttribute="top" secondItem="lUc-FT-EO5" secondAttribute="bottom" id="NnI-xd-7Z4"/>
                             <constraint firstItem="PN4-lz-WSY" firstAttribute="top" secondItem="FgC-cw-pB7" secondAttribute="top" id="PCN-dG-Zkp"/>
-                            <constraint firstItem="VG8-WT-H4E" firstAttribute="top" secondItem="ZgS-nV-U8k" secondAttribute="bottom" constant="10" id="U6P-nP-d5U"/>
                             <constraint firstItem="ULn-jg-pVN" firstAttribute="leading" secondItem="FgC-cw-pB7" secondAttribute="leading" constant="11" id="USN-nj-1Mz"/>
                             <constraint firstItem="MdT-kl-oOd" firstAttribute="centerX" secondItem="FgC-cw-pB7" secondAttribute="centerX" id="Zlo-PX-2iX"/>
                             <constraint firstItem="b5Z-0F-Dnu" firstAttribute="leading" secondItem="FgC-cw-pB7" secondAttribute="leading" id="bfj-ve-eDK"/>
                             <constraint firstItem="MdT-kl-oOd" firstAttribute="top" secondItem="ULn-jg-pVN" secondAttribute="bottom" constant="8" id="gKU-rx-uMc"/>
                             <constraint firstItem="ZgS-nV-U8k" firstAttribute="centerX" secondItem="FgC-cw-pB7" secondAttribute="centerX" id="ktH-DZ-UAT"/>
-                            <constraint firstItem="VG8-WT-H4E" firstAttribute="centerX" secondItem="FgC-cw-pB7" secondAttribute="centerX" id="ouY-4V-BXX"/>
                             <constraint firstItem="ULn-jg-pVN" firstAttribute="centerY" secondItem="FgC-cw-pB7" secondAttribute="centerY" id="rHv-AY-lFU"/>
                             <constraint firstAttribute="trailing" secondItem="b5Z-0F-Dnu" secondAttribute="trailing" id="uGa-Uc-Rvz"/>
                         </constraints>
@@ -2243,21 +2232,6 @@
                                     <action selector="bUpdateProfileClicked:" destination="mli-ge-DHs" eventType="touchUpInside" id="uh4-Sj-VOr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Income" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfy-3e-K0x">
-                                <rect key="frame" x="128" y="562" width="158" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="incomeLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edu-z5-0Jc" userLabel="incomeLabel">
-                                <rect key="frame" x="111" y="613" width="192" height="138"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.54901960780000003" green="0.22352941179999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -2283,7 +2257,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="labelIncome" destination="edu-z5-0Jc" id="Qzc-uI-URr"/>
                         <outlet property="labelName" destination="LE8-J0-hUM" id="TPa-Lx-KTF"/>
                         <segue destination="atl-Qc-9HA" kind="show" identifier="past" id="ShZ-iS-P0u"/>
                         <segue destination="HCA-eV-4aM" kind="show" identifier="style" id="9XU-vH-hFH"/>
@@ -2358,8 +2331,8 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="T1J-Yw-f6Z"/>
-        <segue reference="aNZ-4c-qFV"/>
+        <segue reference="lVh-Hx-QmF"/>
+        <segue reference="ShZ-iS-P0u"/>
         <segue reference="9XU-vH-hFH"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -2367,7 +2340,6 @@
         <image name="Group 16.png" width="398" height="120"/>
         <image name="Login" width="85.333335876464844" height="85.333335876464844"/>
         <image name="Past Appointment" width="40" height="40.333332061767578"/>
-        <image name="Promo" width="40" height="40"/>
         <image name="Register" width="200" height="200"/>
         <image name="Salon.png" width="369" height="200"/>
         <image name="Submit" width="42.666667938232422" height="42.666667938232422"/>

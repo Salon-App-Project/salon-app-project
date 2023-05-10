@@ -11,9 +11,9 @@ class SalonHome: UIViewController {
         super.viewDidLoad()
 
         self.title = "Salon App"
-        labelIncome.layer.cornerRadius = labelIncome.frame.height / 4.0
+        /*labelIncome.layer.cornerRadius = labelIncome.frame.height / 4.0
         labelIncome.layer.masksToBounds = true
-        labelIncome.text = String(income)
+        labelIncome.text = String(income)*/
         labelName.text = "Welcome \(User.current!.username!)"
     }
     /*func grabDetails() {
@@ -35,7 +35,7 @@ class SalonHome: UIViewController {
        }
 
                     
-    }*/
+    }
     func loadIncome() {
         do {
             let constraint: QueryConstraint = try "user" == User.current
@@ -53,7 +53,7 @@ class SalonHome: UIViewController {
         } catch {
             self.view.makeToast(error.localizedDescription)
         }
-    }
+    }*/
     @IBAction func bAppointmentsClicked(_ sender: Any) {
         self.performSegue(withIdentifier: "past", sender: nil)
     }
