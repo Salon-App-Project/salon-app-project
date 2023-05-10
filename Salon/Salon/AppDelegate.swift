@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.shared.registerForRemoteNotifications()
         
-        ParseSwift.initialize(applicationId: "LJ4TDrxv0l0n3FmE1hZLZi4Octtpik87LzuliZsz",
-                              clientKey: "XoBKwgM1GKcPgxY9aMUmDW3YOzFAwjp7mQN1Etf0",
+        ParseSwift.initialize(applicationId: "vyArfQkXCd41c2IJlJdfqL8gjSaMkCEVk8tQhhzx",
+                              clientKey: "8Y6unjV3MZNe4D7eGoisNkXGNM0d0MmeP1uYFiRy",
                               serverURL: URL(string: "https://parseapi.back4app.com")!)
 
         NotificationCenter.default.addObserver(forName: Notification.Name("login"), object: nil, queue: OperationQueue.main) { [weak self] _ in
