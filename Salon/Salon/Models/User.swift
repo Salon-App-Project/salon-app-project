@@ -20,4 +20,5 @@ struct User: ParseUser {
 
     // custom properties.
     var usertype: String?
+    var usercredits: Double?
 }
