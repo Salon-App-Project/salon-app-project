@@ -410,31 +410,8 @@
                                             <outlet property="delegate" destination="SdV-1F-hCs" id="h8d-zH-xci"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Verify Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sjq-fV-EiA" userLabel="Txt Fld Pass Verify" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
-                                        <rect key="frame" x="42" y="401" width="330" height="40"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <outlet property="delegate" destination="SdV-1F-hCs" id="qW4-Zf-cyq"/>
-                                        </connections>
-                                    </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="znc-fd-K5q" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
-                                        <rect key="frame" x="42" y="461" width="330" height="40"/>
+                                        <rect key="frame" x="42" y="401" width="330" height="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
@@ -511,41 +488,32 @@
                                     <constraint firstAttribute="trailing" secondItem="sVJ-Ir-Re5" secondAttribute="trailing" constant="88" id="25b-l2-uD3"/>
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="leading" secondItem="YjF-d1-xfL" secondAttribute="leading" id="3za-kq-hP1"/>
                                     <constraint firstAttribute="width" constant="414" id="6kj-ao-Iah"/>
-                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="trailing" secondItem="znc-fd-K5q" secondAttribute="trailing" id="71x-Rd-dWf"/>
-                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="trailing" secondItem="mKC-0M-NJa" secondAttribute="trailing" id="7fO-fW-NCE"/>
-                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="top" secondItem="mKC-0M-NJa" secondAttribute="bottom" constant="20" id="7wu-Ve-CjC"/>
-                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="leading" secondItem="mKC-0M-NJa" secondAttribute="leading" id="7yB-Pg-9dQ"/>
                                     <constraint firstItem="YjF-d1-xfL" firstAttribute="centerX" secondItem="d8K-8v-3sD" secondAttribute="centerX" id="8uc-Bd-35Z"/>
                                     <constraint firstItem="SOb-Sd-UuV" firstAttribute="leading" secondItem="fgM-JB-bHu" secondAttribute="leading" id="92B-18-nP1"/>
                                     <constraint firstItem="SOb-Sd-UuV" firstAttribute="top" secondItem="fgM-JB-bHu" secondAttribute="bottom" constant="20" id="Dle-5s-SSi"/>
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="width" secondItem="YjF-d1-xfL" secondAttribute="width" id="G6T-Xo-uyz"/>
                                     <constraint firstItem="mKC-0M-NJa" firstAttribute="width" secondItem="SOb-Sd-UuV" secondAttribute="width" id="Gas-bK-qND"/>
-                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="height" secondItem="mKC-0M-NJa" secondAttribute="height" id="HDt-3C-iHN"/>
                                     <constraint firstItem="znc-fd-K5q" firstAttribute="leading" secondItem="mKC-0M-NJa" secondAttribute="leading" id="Hy1-RV-Imw"/>
                                     <constraint firstItem="mKC-0M-NJa" firstAttribute="trailing" secondItem="SOb-Sd-UuV" secondAttribute="trailing" id="MiO-Ue-bI1"/>
-                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="height" secondItem="znc-fd-K5q" secondAttribute="height" id="Ogk-op-OhG"/>
                                     <constraint firstAttribute="bottom" secondItem="sVJ-Ir-Re5" secondAttribute="bottom" constant="8" id="PVW-HX-z9M"/>
                                     <constraint firstItem="fgM-JB-bHu" firstAttribute="top" secondItem="YjF-d1-xfL" secondAttribute="bottom" constant="101" id="Qkt-hc-osB"/>
                                     <constraint firstItem="SOb-Sd-UuV" firstAttribute="height" secondItem="fgM-JB-bHu" secondAttribute="height" id="RC6-z9-p9x"/>
                                     <constraint firstItem="YjF-d1-xfL" firstAttribute="top" secondItem="d8K-8v-3sD" secondAttribute="top" constant="30" id="S5A-Hg-JPo"/>
-                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="width" secondItem="znc-fd-K5q" secondAttribute="width" id="Skr-iu-4ag"/>
                                     <constraint firstItem="znc-fd-K5q" firstAttribute="height" secondItem="mKC-0M-NJa" secondAttribute="height" id="T0g-4Z-869"/>
                                     <constraint firstAttribute="trailing" secondItem="fgM-JB-bHu" secondAttribute="trailing" constant="42" id="UW0-zs-R0k"/>
                                     <constraint firstItem="mKC-0M-NJa" firstAttribute="leading" secondItem="SOb-Sd-UuV" secondAttribute="leading" id="X2r-jB-3do"/>
                                     <constraint firstItem="fgM-JB-bHu" firstAttribute="leading" secondItem="d8K-8v-3sD" secondAttribute="leading" constant="42" id="b6Q-c4-QtS"/>
-                                    <constraint firstItem="mKC-0M-NJa" firstAttribute="top" secondItem="SOb-Sd-UuV" secondAttribute="bottom" constant="20" id="bg1-wR-5lq"/>
-                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="leading" secondItem="znc-fd-K5q" secondAttribute="leading" id="fxR-uZ-0b0"/>
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="trailing" secondItem="YjF-d1-xfL" secondAttribute="trailing" id="ggl-JX-gVO"/>
+                                    <constraint firstItem="znc-fd-K5q" firstAttribute="top" secondItem="mKC-0M-NJa" secondAttribute="bottom" constant="20" id="hPE-4e-efF"/>
                                     <constraint firstItem="znc-fd-K5q" firstAttribute="width" secondItem="mKC-0M-NJa" secondAttribute="width" id="mCC-ni-Xbv"/>
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="bottom" secondItem="YjF-d1-xfL" secondAttribute="bottom" id="nKz-f3-QFy"/>
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="top" secondItem="YjF-d1-xfL" secondAttribute="top" id="o9o-Wv-6Pt"/>
                                     <constraint firstItem="SOb-Sd-UuV" firstAttribute="width" secondItem="fgM-JB-bHu" secondAttribute="width" id="oJu-9n-qS4"/>
                                     <constraint firstItem="ge1-AA-6aX" firstAttribute="height" secondItem="YjF-d1-xfL" secondAttribute="height" id="plu-NP-4wa"/>
                                     <constraint firstAttribute="height" constant="661" id="qpj-av-ayK"/>
+                                    <constraint firstItem="mKC-0M-NJa" firstAttribute="top" secondItem="SOb-Sd-UuV" secondAttribute="bottom" constant="20" id="rgY-98-XCw"/>
                                     <constraint firstItem="mKC-0M-NJa" firstAttribute="height" secondItem="SOb-Sd-UuV" secondAttribute="height" id="s7N-nA-qo3"/>
                                     <constraint firstItem="znc-fd-K5q" firstAttribute="trailing" secondItem="mKC-0M-NJa" secondAttribute="trailing" id="urU-pd-RY9"/>
-                                    <constraint firstItem="Sjq-fV-EiA" firstAttribute="width" secondItem="mKC-0M-NJa" secondAttribute="width" id="wZX-qi-Mql"/>
-                                    <constraint firstItem="znc-fd-K5q" firstAttribute="top" secondItem="Sjq-fV-EiA" secondAttribute="bottom" constant="20" id="xCP-6a-EoG"/>
                                     <constraint firstItem="sVJ-Ir-Re5" firstAttribute="leading" secondItem="d8K-8v-3sD" secondAttribute="leading" constant="88" id="yCa-sY-DrB"/>
                                     <constraint firstItem="SOb-Sd-UuV" firstAttribute="trailing" secondItem="fgM-JB-bHu" secondAttribute="trailing" id="yg6-Oy-Hfq"/>
                                 </constraints>
@@ -570,7 +538,6 @@
                         <outlet property="txtFldEmail" destination="fgM-JB-bHu" id="l7A-Cg-ih9"/>
                         <outlet property="txtFldMobileNumber" destination="znc-fd-K5q" id="GuY-CV-P6Q"/>
                         <outlet property="txtFldName" destination="SOb-Sd-UuV" id="u3G-cb-OcX"/>
-                        <outlet property="txtFldPassVerify" destination="Sjq-fV-EiA" id="cry-be-fbm"/>
                         <outlet property="txtFldPassword" destination="mKC-0M-NJa" id="9PH-tz-U1O"/>
                     </connections>
                 </viewController>
@@ -1521,28 +1488,28 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="807"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zz0-F9-eHa">
-                                                <rect key="frame" x="184" y="7.9999999999999982" width="46" height="23.333333333333329"/>
+                                                <rect key="frame" x="186.33333333333334" y="8" width="41.666666666666657" height="20"/>
                                                 <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3U4-mp-cq5">
-                                                <rect key="frame" x="185" y="39.333333333333343" width="44.333333333333343" height="23.333333333333329"/>
+                                                <rect key="frame" x="186.33333333333334" y="36" width="41.666666666666657" height="20"/>
                                                 <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
                                                 <color key="textColor" red="0.54901960780000003" green="0.22352941179999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Date and Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0U-nH-goX">
-                                                <rect key="frame" x="135.33333333333331" y="87.666666666666657" width="143.33333333333331" height="21"/>
+                                                <rect key="frame" x="135.33333333333331" y="81" width="143.33333333333331" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="O5k-p7-0Qg">
-                                                <rect key="frame" x="8" y="118.66666666666664" width="398" height="34.333333333333329"/>
+                                                <rect key="frame" x="8" y="111.99999999999999" width="398" height="34.333333333333329"/>
                                             </datePicker>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvz-ci-D08">
-                                                <rect key="frame" x="8" y="173" width="398" height="30"/>
+                                                <rect key="frame" x="8" y="166.33333333333334" width="398" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="0lZ-yZ-2M7"/>
                                                     <constraint firstAttribute="width" constant="398" id="iRV-Id-9nk"/>
@@ -1552,13 +1519,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j60-nx-9Bq">
-                                                <rect key="frame" x="8" y="233" width="398" height="21"/>
+                                                <rect key="frame" x="8" y="226.33333333333331" width="398" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gEt-GS-rAZ" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="262" width="398" height="40"/>
+                                                <rect key="frame" x="8" y="255.33333333333331" width="398" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="ml8-Zo-NM8"/>
                                                     <constraint firstAttribute="width" constant="398" id="tHo-jq-lqo"/>
@@ -1585,7 +1552,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hDF-We-ght" customClass="HoshiTextField" customModule="Salon" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="310" width="398" height="40"/>
+                                                <rect key="frame" x="8" y="303.33333333333331" width="398" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="398" id="Zpo-dE-HWR"/>
                                                     <constraint firstAttribute="height" constant="40" id="evw-0W-T4k"/>
@@ -1612,7 +1579,7 @@
                                                 </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vM4-Dp-gTp" customClass="LGButton" customModule="LGButton">
-                                                <rect key="frame" x="27" y="450" width="360" height="50"/>
+                                                <rect key="frame" x="27" y="443.33333333333337" width="360" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="360" id="kX7-4h-8tT"/>
@@ -1631,7 +1598,7 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="6"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="BOOK APPOINTMENT"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="BOOK APPOINTMENT/Pay"/>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
                                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
@@ -1721,11 +1688,9 @@
                         <outlet property="lblStylePrice" destination="3U4-mp-cq5" id="GtE-0U-mOe"/>
                         <outlet property="txtFldFullName" destination="gEt-GS-rAZ" id="YSf-g2-a3C"/>
                         <outlet property="txtFldMobileNumber" destination="hDF-We-ght" id="AVJ-nL-mBn"/>
-                        <segue destination="9M0-vU-c36" kind="unwind" identifier="backhome" unwindAction="unwindToHome:" id="9wj-we-Idz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ltl-f4-OQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="9M0-vU-c36" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4955" y="-1394"/>
         </scene>
@@ -1748,7 +1713,7 @@
                                     <constraint firstAttribute="height" constant="44" id="EML-9I-j82"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0BX-xY-nAN">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0BX-xY-nAN">
                                 <rect key="frame" x="0.0" y="89" width="414" height="807"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1766,35 +1731,32 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfx-jr-sUJ">
                                                     <rect key="frame" x="8" y="10" width="398" height="130"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salon Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjz-MG-ALI">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjz-MG-ALI">
                                                             <rect key="frame" x="8" y="6" width="382" height="30"/>
                                                             <constraints>
+                                                                <constraint firstAttribute="width" constant="382" id="6ae-A1-xCN"/>
                                                                 <constraint firstAttribute="height" constant="30" id="mwA-jX-PWj"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="16"/>
                                                             <color key="textColor" red="0.54739093780000003" green="0.2248520255" blue="0.2008312941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Style" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJd-Xk-hD8">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salon Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJd-Xk-hD8">
                                                             <rect key="frame" x="8" y="41" width="382" height="25"/>
                                                             <constraints>
+                                                                <constraint firstAttribute="width" constant="382" id="V9O-0M-O5t"/>
                                                                 <constraint firstAttribute="height" constant="25" id="liM-u5-Diq"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="15"/>
-                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 July 2020  11:00AM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDY-Rr-zmN">
-                                                            <rect key="frame" x="8" y="71" width="382" height="15.333333333333329"/>
+                                                            <rect key="frame" x="8" y="71" width="382" height="20"/>
                                                             <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="Dbk-Rr-Dv0"/>
                                                                 <constraint firstAttribute="width" constant="382" id="Vbz-Bk-ent"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
-                                                            <color key="textColor" red="0.54739093780000003" green="0.2248520255" blue="0.2008312941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 July 2020  11:00AM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgl-yu-VYh">
-                                                            <rect key="frame" x="8" y="94.333333333333329" width="382" height="15.333333333333329"/>
                                                             <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                                                             <color key="textColor" red="0.54739093780000003" green="0.2248520255" blue="0.2008312941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -1803,10 +1765,7 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="cjz-MG-ALI" secondAttribute="trailing" constant="8" id="4TN-A3-X0j"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Zgl-yu-VYh" secondAttribute="trailing" constant="8" id="8Oy-EK-WfM"/>
-                                                        <constraint firstItem="Zgl-yu-VYh" firstAttribute="leading" secondItem="bfx-jr-sUJ" secondAttribute="leading" constant="8" id="ADg-I6-ntS"/>
                                                         <constraint firstItem="dDY-Rr-zmN" firstAttribute="trailing" secondItem="SJd-Xk-hD8" secondAttribute="trailing" id="AGX-JM-w0E"/>
-                                                        <constraint firstItem="Zgl-yu-VYh" firstAttribute="top" secondItem="dDY-Rr-zmN" secondAttribute="bottom" constant="8" id="Yth-ch-TrY"/>
                                                         <constraint firstItem="SJd-Xk-hD8" firstAttribute="trailing" secondItem="cjz-MG-ALI" secondAttribute="trailing" id="aIl-JE-2aO"/>
                                                         <constraint firstAttribute="width" constant="398" id="d5g-ud-3rj"/>
                                                         <constraint firstItem="cjz-MG-ALI" firstAttribute="top" secondItem="bfx-jr-sUJ" secondAttribute="top" constant="6" id="dyi-fj-eMF"/>
@@ -1830,9 +1789,8 @@
                                         <connections>
                                             <outlet property="customVw" destination="bfx-jr-sUJ" id="Qyf-0I-ckE"/>
                                             <outlet property="lblAppointmentDate" destination="dDY-Rr-zmN" id="qaE-QD-uTZ"/>
-                                            <outlet property="lblAppointmentSalonName" destination="cjz-MG-ALI" id="sZS-Gy-gKl"/>
-                                            <outlet property="lblAppointmentStyle" destination="SJd-Xk-hD8" id="4rf-Dd-uGk"/>
-                                            <outlet property="lblStatus" destination="Zgl-yu-VYh" id="fa7-Tl-7IO"/>
+                                            <outlet property="lblAppointmentFor" destination="cjz-MG-ALI" id="9yN-XR-8k5"/>
+                                            <outlet property="lblAppointmentSpecialistName" destination="SJd-Xk-hD8" id="ize-ji-dEX"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1855,7 +1813,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Appointments" id="jvJ-kz-6C0"/>
                     <connections>
-                        <outlet property="appointmentTableView" destination="0BX-xY-nAN" id="UEj-uT-0ch"/>
+                        <outlet property="PastAppointmentTableView" destination="0BX-xY-nAN" id="qyX-d4-i4A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2OO-wX-R1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2124,12 +2082,9 @@
                         <outlet property="txtFldName" destination="OdT-PS-DgY" id="VvE-MG-3LF"/>
                         <outlet property="txtFldPincode" destination="FA2-Aw-zie" id="nZz-az-2MC"/>
                         <outlet property="txtFldState" destination="lZe-bM-kJ1" id="uci-0X-kmf"/>
-                        <segue destination="mqB-Fj-GxM" kind="unwind" identifier="backHome" unwindAction="unwindToHome:" id="6G1-kd-Hpi"/>
-                        <segue destination="mqB-Fj-GxM" kind="unwind" identifier="backSalonHome" unwindAction="unwindToSalonHome:" id="zCx-Dq-H4K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ue-Z4-EQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="mqB-Fj-GxM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1442" y="-731"/>
         </scene>
@@ -2294,9 +2249,6 @@
         <designable name="SOb-Sd-UuV">
             <size key="intrinsicContentSize" width="49.333333333333336" height="25"/>
         </designable>
-        <designable name="Sjq-fV-EiA">
-            <size key="intrinsicContentSize" width="130.66666666666666" height="24"/>
-        </designable>
         <designable name="TAx-AV-Cik">
             <size key="intrinsicContentSize" width="10" height="10"/>
         </designable>
@@ -2334,7 +2286,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="T1J-Yw-f6Z"/>
         <segue reference="aNZ-4c-qFV"/>
-        <segue reference="9XU-vH-hFH"/>
+        <segue reference="Ozu-Mf-l6q"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Edit Profile" width="40" height="40"/>
